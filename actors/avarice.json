@@ -1,7 +1,7 @@
 {
   "name": "Avarice",
   "type": "npc",
-  "img": "icons/magic/fire/elemental-fire-humanoid.webp",
+  "img": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Avarice.webp",
   "system": {
     "abilities": {
       "str": {
@@ -131,6 +131,11 @@
       "source": "Appendix C",
       "chapter": "npc",
       "arcane_brotherhood": true
+    }
+  },
+  "prototypeToken": {
+    "texture": {
+      "src": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Avarice.webp"
     }
   }
 }
