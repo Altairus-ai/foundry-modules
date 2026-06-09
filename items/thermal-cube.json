@@ -1,0 +1,19 @@
+{
+  "name": "Thermal Cube",
+  "type": "equipment",
+  "img": "icons/magic/fire/flame-burning-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Wondrous Item, Common</strong></p><p>A 3-inch cube of solid brimstone. Generates dry heat keeping the temperature within 15 feet at 95\u00b0F (35\u00b0C). Essential for survival in Icewind Dale's extreme cold.</p>"
+    },
+    "rarity": "common",
+    "identified": true,
+    "source": "Rime of the Frostmaiden",
+    "weight": 1
+  },
+  "flags": {
+    "rotf": {
+      "appendix": "D"
+    }
+  }
+}
