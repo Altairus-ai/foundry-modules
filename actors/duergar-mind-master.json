@@ -1,0 +1,186 @@
+{
+  "name": "Duergar Mind Master",
+  "type": "npc",
+  "img": "icons/creatures/humanoids/humanoid-dwarf.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 11
+      },
+      "dex": {
+        "value": 17
+      },
+      "con": {
+        "value": 14
+      },
+      "int": {
+        "value": 15
+      },
+      "wis": {
+        "value": 10
+      },
+      "cha": {
+        "value": 12
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 14,
+        "calc": "flat",
+        "formula": "leather armor (19 while reduced)"
+      },
+      "hp": {
+        "value": 39,
+        "max": 39,
+        "formula": "6d8+12"
+      },
+      "speed": {
+        "value": 25
+      }
+    },
+    "details": {
+      "type": {
+        "value": "humanoid",
+        "subtype": "dwarf"
+      },
+      "alignment": "lawful evil",
+      "cr": 2,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "languages": {
+        "value": [
+          "dwarvish",
+          "undercommon"
+        ]
+      },
+      "dr": {
+        "value": [
+          "poison"
+        ]
+      },
+      "senses": "darkvision 120 ft., truesight 30 ft., passive Perception 12"
+    },
+    "saves": {
+      "wis": {
+        "proficient": 1
+      }
+    },
+    "skills": {
+      "prc": {
+        "value": 1
+      },
+      "ste": {
+        "value": 1
+      }
+    }
+  },
+  "items": [
+    {
+      "name": "Duergar Resilience",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Advantage on saves against poison, spells, illusions, and to resist being charmed or paralyzed."
+        }
+      }
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "In sunlight, disadvantage on attack rolls and Perception checks relying on sight."
+        }
+      }
+    },
+    {
+      "name": "Multiattack",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Makes two melee attacks. Can replace one with Mind Mastery."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
+      }
+    },
+    {
+      "name": "Mind-Poison Dagger",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee: +5 to hit, reach 5 ft. Hit: 5 (1d4+3) piercing plus 10 (3d6) psychic, or 1 piercing plus 14 (4d6) psychic while reduced."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 5,
+        "damage": {
+          "parts": [
+            [
+              "1d4+3",
+              "piercing"
+            ],
+            [
+              "3d6",
+              "psychic"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Mind Mastery",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Targets one creature within 60 ft. DC 12 Intelligence save or duergar causes it to use its reaction to attack another creature or move up to 10 ft."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "save": {
+          "ability": "int",
+          "dc": 12
+        }
+      }
+    },
+    {
+      "name": "Invisibility (Recharge 4-6)",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Turns invisible until it attacks, casts a spell, uses Reduce, or concentration breaks."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
+      }
+    },
+    {
+      "name": "Reduce (Recharges after Short or Long Rest)",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "For 1 minute, becomes Tiny, reduces weapon damage to 1, and makes attacks/checks/saves with disadvantage if they use Strength. Gains +5 to Stealth checks and AC. Can Hide as bonus action."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C",
+      "chapter": "3"
+    }
+  }
+}
