@@ -1,0 +1,176 @@
+{
+  "name": "Jarund Elkhardt",
+  "type": "npc",
+  "img": "icons/creatures/humanoids/humanoid-giant.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 18
+      },
+      "dex": {
+        "value": 10
+      },
+      "con": {
+        "value": 15
+      },
+      "int": {
+        "value": 12
+      },
+      "wis": {
+        "value": 14
+      },
+      "cha": {
+        "value": 18
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 14,
+        "calc": "flat",
+        "formula": "hide armor, shield"
+      },
+      "hp": {
+        "value": 104,
+        "max": 104,
+        "formula": "16d8+32"
+      },
+      "speed": {
+        "value": 30
+      }
+    },
+    "details": {
+      "type": {
+        "value": "humanoid",
+        "subtype": "human"
+      },
+      "alignment": "neutral",
+      "cr": 5,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "languages": {
+        "value": [
+          "common",
+          "dwarvish"
+        ]
+      },
+      "senses": "passive Perception 12"
+    },
+    "saves": {
+      "con": {
+        "proficient": 1
+      },
+      "wis": {
+        "proficient": 1
+      }
+    },
+    "skills": {
+      "ath": {
+        "value": 2
+      },
+      "itm": {
+        "value": 2
+      },
+      "sur": {
+        "value": 1
+      }
+    }
+  },
+  "items": [
+    {
+      "name": "Brute",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "A melee weapon deals one extra die of its damage when Jarund hits with it (included in attacks)."
+        }
+      }
+    },
+    {
+      "name": "Multiattack",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Makes three melee attacks."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
+      }
+    },
+    {
+      "name": "Warhammer",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee: +7 to hit, reach 5 ft. Hit: 13 (2d8+4) or 15 (2d10+4) two-handed bludgeoning damage."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 7,
+        "damage": {
+          "parts": [
+            [
+              "2d8+4",
+              "bludgeoning"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Shield",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee: +7 to hit, reach 5 ft. Hit: 11 (2d6+4) bludgeoning. Jarund pushes target 5 ft. If pushed within 5 ft. of friendly creature, that creature can attack as reaction."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 7,
+        "damage": {
+          "parts": [
+            [
+              "2d6+4",
+              "bludgeoning"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Javelin",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee or Ranged: +7 to hit, reach 5 ft. or range 30/120 ft. Hit: 11 (2d6+4) piercing damage."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 7,
+        "damage": {
+          "parts": [
+            [
+              "2d6+4",
+              "piercing"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C",
+      "chapter": "2",
+      "tribe": "elk"
+    }
+  }
+}
