@@ -1,0 +1,162 @@
+{
+  "name": "Demos Magen",
+  "type": "npc",
+  "img": "icons/creatures/magical/construct-golem-stone-blue.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 14
+      },
+      "dex": {
+        "value": 14
+      },
+      "con": {
+        "value": 18
+      },
+      "int": {
+        "value": 10
+      },
+      "wis": {
+        "value": 10
+      },
+      "cha": {
+        "value": 7
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 16,
+        "calc": "flat",
+        "formula": "chain mail"
+      },
+      "hp": {
+        "value": 51,
+        "max": 51,
+        "formula": "6d8+24"
+      },
+      "speed": {
+        "value": 30
+      }
+    },
+    "details": {
+      "type": {
+        "value": "construct"
+      },
+      "alignment": "unaligned",
+      "cr": 2,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "languages": {
+        "custom": "understands creator's languages but can't speak"
+      },
+      "di": {
+        "value": [
+          "poison"
+        ]
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "exhaustion",
+          "frightened",
+          "paralyzed",
+          "poisoned"
+        ]
+      },
+      "senses": "passive Perception 10"
+    }
+  },
+  "items": [
+    {
+      "name": "Fiery End",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "If the magen dies, its body disintegrates in a harmless burst of fire and smoke, leaving behind anything it was wearing or carrying."
+        }
+      }
+    },
+    {
+      "name": "Magic Resistance",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Advantage on saving throws against spells and other magical effects."
+        }
+      }
+    },
+    {
+      "name": "Unusual Nature",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Doesn't require air, food, drink, or sleep."
+        }
+      }
+    },
+    {
+      "name": "Multiattack",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Makes two melee attacks."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
+      }
+    },
+    {
+      "name": "Greatsword",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee: +4 to hit, reach 5 ft. Hit: 9 (2d6+2) slashing damage."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 4,
+        "damage": {
+          "parts": [
+            [
+              "2d6+2",
+              "slashing"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Light Crossbow",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Ranged: +4 to hit, range 80/320 ft. Hit: 6 (1d8+2) piercing damage."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 4,
+        "damage": {
+          "parts": [
+            [
+              "1d8+2",
+              "piercing"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C",
+      "chapter": "7"
+    }
+  }
+}
