@@ -1,0 +1,126 @@
+{
+  "name": "Chwinga",
+  "type": "npc",
+  "img": "icons/magic/nature/spirit-plant-flower.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 1
+      },
+      "dex": {
+        "value": 20
+      },
+      "con": {
+        "value": 10
+      },
+      "int": {
+        "value": 14
+      },
+      "wis": {
+        "value": 16
+      },
+      "cha": {
+        "value": 16
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 15,
+        "calc": "flat"
+      },
+      "hp": {
+        "value": 5,
+        "max": 5,
+        "formula": "2d4"
+      },
+      "speed": {
+        "value": 20,
+        "climb": 20,
+        "swim": 20
+      }
+    },
+    "details": {
+      "type": {
+        "value": "elemental"
+      },
+      "alignment": "neutral",
+      "cr": 0,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "senses": "blindsight 60 ft., passive Perception 17"
+    },
+    "skills": {
+      "acr": {
+        "value": 2
+      },
+      "prc": {
+        "value": 2
+      },
+      "ste": {
+        "value": 2
+      }
+    }
+  },
+  "items": [
+    {
+      "name": "Evasion",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "When subjected to a Dex save for half damage, takes no damage on success and half on failure."
+        }
+      }
+    },
+    {
+      "name": "Innate Spellcasting",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Spellcasting ability Wisdom, no components. At will: druidcraft, guidance, pass without trace, resistance."
+        }
+      }
+    },
+    {
+      "name": "Unusual Nature",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Doesn't require air, food, or drink. When it dies, turns into flower petals, pollen, a stone statuette, a smooth stone sphere, or fresh water."
+        }
+      }
+    },
+    {
+      "name": "Magical Gift (1/Day)",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Targets a humanoid within 5 ft. The target gains a supernatural charm of the DM's choice."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
+      }
+    },
+    {
+      "name": "Natural Shelter",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Magically takes shelter inside a rock, living plant, or natural fresh water source. Can't be targeted while inside. Can emerge as action."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C",
+      "chapter": "various"
+    }
+  }
+}
