@@ -1,7 +1,7 @@
 {
   "name": "Living Bigby's Hand",
   "type": "npc",
-  "img": "icons/magic/control/debuff-energy-snare-teal.webp",
+  "img": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Living%20Bigbys%20Hand.webp",
   "system": {
     "abilities": {
       "str": {
@@ -137,6 +137,11 @@
     "rotf": {
       "source": "Appendix C",
       "chapter": "7"
+    }
+  },
+  "prototypeToken": {
+    "texture": {
+      "src": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Living%20Bigbys%20Hand.webp"
     }
   }
 }
