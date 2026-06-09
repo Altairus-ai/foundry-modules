@@ -1,0 +1,99 @@
+{
+  "name": "Seal",
+  "type": "npc",
+  "img": "icons/creatures/fish/fish-shark-swimming.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10
+      },
+      "dex": {
+        "value": 12
+      },
+      "con": {
+        "value": 11
+      },
+      "int": {
+        "value": 3
+      },
+      "wis": {
+        "value": 12
+      },
+      "cha": {
+        "value": 5
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 11
+      },
+      "hp": {
+        "value": 9,
+        "max": 9,
+        "formula": "2d8"
+      },
+      "speed": {
+        "value": 20,
+        "swim": 40
+      }
+    },
+    "details": {
+      "type": {
+        "value": "beast"
+      },
+      "alignment": "unaligned",
+      "cr": 0,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "senses": "darkvision 60 ft., passive Perception 11"
+    }
+  },
+  "items": [
+    {
+      "name": "Hold Breath",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Can hold its breath for 15 minutes."
+        }
+      }
+    },
+    {
+      "name": "Keen Smell",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Advantage on Wisdom (Perception) checks that rely on smell."
+        }
+      }
+    },
+    {
+      "name": "Bite",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee: +2 to hit, reach 5 ft. Hit: 1 piercing damage."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 2,
+        "damage": {
+          "parts": [
+            [
+              "1",
+              "piercing"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C"
+    }
+  }
+}
