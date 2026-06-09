@@ -1,0 +1,157 @@
+{
+  "name": "Brain in a Jar",
+  "type": "npc",
+  "img": "icons/magic/death/undead-ghost-strike-purple.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 1
+      },
+      "dex": {
+        "value": 3
+      },
+      "con": {
+        "value": 15
+      },
+      "int": {
+        "value": 19
+      },
+      "wis": {
+        "value": 10
+      },
+      "cha": {
+        "value": 15
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 11,
+        "calc": "flat",
+        "formula": "natural armor"
+      },
+      "hp": {
+        "value": 55,
+        "max": 55,
+        "formula": "10d6+20"
+      },
+      "speed": {
+        "value": 0,
+        "fly": 10,
+        "hover": true
+      }
+    },
+    "details": {
+      "type": {
+        "value": "undead"
+      },
+      "alignment": "any",
+      "cr": 3,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "di": {
+        "value": [
+          "poison"
+        ]
+      },
+      "ci": {
+        "value": [
+          "exhaustion",
+          "paralyzed",
+          "poisoned",
+          "prone"
+        ]
+      },
+      "senses": "blindsight 120 ft., passive Perception 10"
+    },
+    "saves": {
+      "int": {
+        "proficient": 1
+      },
+      "cha": {
+        "proficient": 1
+      }
+    }
+  },
+  "items": [
+    {
+      "name": "Detect Sentience",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Can sense presence and location of any creature within 300 ft. with INT 3+, regardless of barriers, unless protected by mind blank."
+        }
+      }
+    },
+    {
+      "name": "Innate Spellcasting (Psionics)",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Spellcasting ability Intelligence (DC 14, +6). At will: chill touch, detect thoughts, mage hand, zone of truth. 3/day: charm person, hold person. 1/day: compulsion, hold monster, sleep (3rd level), Tasha's hideous laughter."
+        }
+      }
+    },
+    {
+      "name": "Magic Resistance",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Advantage on saving throws against spells and other magic effects."
+        }
+      }
+    },
+    {
+      "name": "Chill Touch",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Ranged Spell Attack: +6 to hit, range 120 ft. Hit: 13 (3d8) necrotic damage. Target can't regain hp until start of brain's next turn."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "damage": {
+          "parts": [
+            [
+              "3d8",
+              "necrotic"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Mind Blast (Recharge 5-6)",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "60-foot cone. DC 14 Intelligence save or take 17 (3d8+4) psychic damage and be stunned for 1 minute. Creature can repeat save at end of each turn."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "save": {
+          "ability": "int",
+          "dc": 14
+        },
+        "damage": {
+          "parts": [
+            [
+              "3d8+4",
+              "psychic"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C",
+      "chapter": "various"
+    }
+  }
+}
