@@ -1,0 +1,33 @@
+{
+  "id": "the-haunt-pbpublishing",
+  "title": "The Haunt",
+  "description": "A one-shot D&D 5e horror adventure set in Montarthas Manor. For 4th-5th level characters (3-5 players). By P.B. Publishing. Converted by Questwright.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "14"
+  },
+  "authors": [
+    { "name": "Phil Beckwith (P.B. Publishing)" }
+  ],
+  "packs": [
+    { "name": "actors",  "label": "The Haunt - Actors",  "path": "packs/actors.db",  "type": "Actor" },
+    { "name": "items",   "label": "The Haunt - Items",   "path": "packs/items.db",   "type": "Item" },
+    { "name": "journal", "label": "The Haunt - Journal", "path": "packs/journal.db", "type": "JournalEntry" },
+    { "name": "tables",  "label": "The Haunt - Tables",  "path": "packs/tables.db",  "type": "RollTable" },
+    { "name": "scenes",  "label": "The Haunt - Scenes",  "path": "packs/scenes.db",  "type": "Scene" }
+  ],
+  "url": "https://github.com/Altairus-ai/foundry-modules",
+  "manifest": "https://raw.githubusercontent.com/Altairus-ai/foundry-modules/main/the-haunt-pbpublishing/module.json",
+  "download": "https://github.com/Altairus-ai/foundry-modules/releases/latest/download/the-haunt-pbpublishing.zip",
+  "license": "See adventure PDF. Map art by Chris Bissette (loottheroom.uk).",
+  "flags": {
+    "questwright": {
+      "version": "1.0.0",
+      "source": "The Haunt v2.4 PDF (P.B. Publishing)",
+      "converted": "2026-06-09",
+      "system": "dnd5e",
+      "tier": "T2-Full"
+    }
+  }
+}
