@@ -1,0 +1,18 @@
+{
+  "name": "Lantern of Tracking",
+  "type": "equipment",
+  "img": "icons/sundries/lights/lantern-iron-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Wondrous Item, Common</strong></p><p>Hooded lantern, 6 hours per pint of oil, bright light 30 ft, dim 30 ft. Tracks one creature type (determined at creation). Flame turns bright green within 300 ft of that creature type. Does not pinpoint location. Types: Aberrations, Celestials, Constructs, Dragons, Elementals, Fey, Fiends, Giants, Monstrosities, or Undead.</p>"
+    },
+    "rarity": "common",
+    "identified": true,
+    "source": "Rime of the Frostmaiden"
+  },
+  "flags": {
+    "rotf": {
+      "appendix": "D"
+    }
+  }
+}
