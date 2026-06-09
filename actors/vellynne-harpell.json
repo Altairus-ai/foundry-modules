@@ -1,7 +1,7 @@
 {
   "name": "Vellynne Harpell",
   "type": "npc",
-  "img": "icons/magic/unholy/strike-beam-blood.webp",
+  "img": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Vellynne%20Harpell.webp",
   "system": {
     "abilities": {
       "str": {
@@ -127,6 +127,11 @@
       "source": "Appendix C",
       "chapter": "npc",
       "arcane_brotherhood": true
+    }
+  },
+  "prototypeToken": {
+    "texture": {
+      "src": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Vellynne%20Harpell.webp"
     }
   }
 }
