@@ -1,7 +1,7 @@
 {
   "name": "Snow Golem",
   "type": "npc",
-  "img": "icons/magic/nature/element-ice-snow.webp",
+  "img": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Snow%20Golem.webp",
   "system": {
     "abilities": {
       "str": {
@@ -165,6 +165,11 @@
     "rotf": {
       "source": "Appendix C",
       "chapter": "various"
+    }
+  },
+  "prototypeToken": {
+    "texture": {
+      "src": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Snow%20Golem.webp"
     }
   }
 }
