@@ -1,0 +1,67 @@
+{
+  "id": "rotf-ch4-destructions-light",
+  "title": "RotF Chapter 4: Destruction's Light",
+  "description": "RotF Chapter 4: Destruction's Light \u2014 Journal entries and scenes. Load/unload per chapter for performance.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Szoradrin",
+      "url": "https://github.com/Altairus-ai"
+    }
+  ],
+  "packs": [
+    {
+      "name": "rotf-ch4-destructions-light-journals",
+      "label": "Journals",
+      "path": "packs/rotf-ch4-destructions-light-journals",
+      "type": "JournalEntry",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "rotf-ch4-destructions-light-scenes",
+      "label": "Scenes",
+      "path": "packs/rotf-ch4-destructions-light-scenes",
+      "type": "Scene",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "RotF Chapter 4: Destruction's Light",
+      "sorting": "a",
+      "color": "#5bb8f5",
+      "packs": [
+        "rotf-ch4-destructions-light-journals",
+        "rotf-ch4-destructions-light-scenes"
+      ]
+    }
+  ],
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.363",
+    "maximum": "14.999.999"
+  },
+  "relationships": {
+    "requires": [
+      {
+        "id": "rime-of-the-frostmaiden",
+        "type": "module"
+      },
+      {
+        "id": "dnd5e",
+        "type": "system"
+      }
+    ]
+  },
+  "url": "https://github.com/Altairus-ai/foundry-modules",
+  "manifest": "https://raw.githubusercontent.com/Altairus-ai/foundry-modules/release/rotf-ch4-destructions-light/module.json",
+  "download": "https://codeload.github.com/Altairus-ai/foundry-modules/zip/refs/heads/release/rotf-ch4-destructions-light"
+}
