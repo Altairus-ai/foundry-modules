@@ -1,0 +1,193 @@
+{
+  "name": "Tomb Tapper",
+  "type": "npc",
+  "img": "icons/creatures/magical/construct-golem-stone-blue.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 22
+      },
+      "dex": {
+        "value": 10
+      },
+      "con": {
+        "value": 21
+      },
+      "int": {
+        "value": 14
+      },
+      "wis": {
+        "value": 14
+      },
+      "cha": {
+        "value": 11
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 17,
+        "calc": "flat",
+        "formula": "natural armor"
+      },
+      "hp": {
+        "value": 207,
+        "max": 207,
+        "formula": "18d12+90"
+      },
+      "speed": {
+        "value": 30,
+        "burrow": 10
+      }
+    },
+    "details": {
+      "type": {
+        "value": "construct"
+      },
+      "alignment": "lawful neutral",
+      "cr": 10,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "languages": {
+        "custom": "understands Common and Undercommon but doesn't speak, telepathy 60 ft."
+      },
+      "dr": {
+        "value": [
+          "lightning"
+        ]
+      },
+      "di": {
+        "value": [
+          "cold",
+          "fire"
+        ]
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "frightened"
+        ]
+      },
+      "senses": "blindsight 240 ft., passive Perception 16"
+    },
+    "skills": {
+      "prc": {
+        "value": 1
+      }
+    }
+  },
+  "items": [
+    {
+      "name": "Petrified Death",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "A tomb tapper reduced to 0 hit points turns into a lifeless stone statue. Anything it's wearing or carrying is not transformed."
+        }
+      }
+    },
+    {
+      "name": "Sense Magic",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "The tomb tapper senses magic within 30 feet and can use an action to pinpoint any magic source. Penetrates barriers but is blocked by a thin sheet of lead."
+        }
+      }
+    },
+    {
+      "name": "Tunneler",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Can burrow through solid rock at half speed, leaving a 10-foot-wide, 20-foot-tall tunnel."
+        }
+      }
+    },
+    {
+      "name": "Multiattack",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Makes two attacks with sledgehammer or claws. If both claws hit the same creature, can pull it within 5 ft. and make a bite attack."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
+      }
+    },
+    {
+      "name": "Bite",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee Weapon Attack: +10 to hit, reach 5 ft. Hit: 22 (3d10+6) slashing damage."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 10,
+        "damage": {
+          "parts": [
+            [
+              "3d10+6",
+              "slashing"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Claw",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee Weapon Attack: +10 to hit, reach 10 ft. Hit: 16 (3d6+6) slashing damage."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 10,
+        "damage": {
+          "parts": [
+            [
+              "3d6+6",
+              "slashing"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Sledgehammer",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee or Ranged Weapon Attack: +10 to hit, reach 15 ft. or range 30/120 ft. Hit: 27 (6d6+6) bludgeoning or force damage (tapper's choice). Returns to tapper at end of turn if thrown."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 10,
+        "damage": {
+          "parts": [
+            [
+              "6d6+6",
+              "bludgeoning"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C",
+      "chapter": "7"
+    }
+  }
+}
