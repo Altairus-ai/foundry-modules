@@ -1,0 +1,117 @@
+{
+  "name": "Dzaan's Simulacrum",
+  "type": "npc",
+  "img": "icons/magic/control/debuff-energy-snare-teal.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10
+      },
+      "dex": {
+        "value": 11
+      },
+      "con": {
+        "value": 12
+      },
+      "int": {
+        "value": 16
+      },
+      "wis": {
+        "value": 13
+      },
+      "cha": {
+        "value": 15
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 10,
+        "calc": "flat"
+      },
+      "hp": {
+        "value": 24,
+        "max": 24,
+        "formula": "half of 9d8+9"
+      },
+      "speed": {
+        "value": 30
+      }
+    },
+    "details": {
+      "type": {
+        "value": "construct"
+      },
+      "alignment": "lawful evil",
+      "cr": 1,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "languages": {
+        "value": [
+          "abyssal",
+          "common",
+          "giant",
+          "infernal"
+        ]
+      },
+      "senses": "passive Perception 11"
+    }
+  },
+  "items": [
+    {
+      "name": "Spellcasting (9th-level)",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Spell save DC 13, +5 to hit. Can't regain expended spell slots. Cantrips: acid splash, light, minor illusion, shocking grasp. 1st (2): detect magic, disguise self, magic missile. 2nd (2): invisibility, levitate, phantasmal force."
+        }
+      }
+    },
+    {
+      "name": "Shocking Grasp",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Melee Spell Attack: +5 to hit. Hit: 9 (2d8) lightning damage. Target can't take reactions until start of its next turn. Advantage if target wears metal armor."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
+      }
+    },
+    {
+      "name": "Acid Splash",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "One or two creatures within 60 ft. and 5 ft. of each other must succeed on DC 13 Dex save or take 7 (2d6) acid damage."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
+      }
+    },
+    {
+      "name": "Magic Missile",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Three darts, each hitting one creature within 120 ft. for 3 (1d4+1) force damage. Uses a spell slot."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C",
+      "chapter": "npc",
+      "arcane_brotherhood": true
+    }
+  }
+}
