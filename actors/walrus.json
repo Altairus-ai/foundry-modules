@@ -1,0 +1,90 @@
+{
+  "name": "Walrus",
+  "type": "npc",
+  "img": "icons/creatures/fish/fish-shark-swimming.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 15
+      },
+      "dex": {
+        "value": 9
+      },
+      "con": {
+        "value": 14
+      },
+      "int": {
+        "value": 3
+      },
+      "wis": {
+        "value": 11
+      },
+      "cha": {
+        "value": 4
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 9
+      },
+      "hp": {
+        "value": 22,
+        "max": 22,
+        "formula": "3d10+6"
+      },
+      "speed": {
+        "value": 20,
+        "swim": 40
+      }
+    },
+    "details": {
+      "type": {
+        "value": "beast"
+      },
+      "alignment": "unaligned",
+      "cr": 0.25,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "senses": "passive Perception 10"
+    }
+  },
+  "items": [
+    {
+      "name": "Hold Breath",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Can hold its breath for 10 minutes."
+        }
+      }
+    },
+    {
+      "name": "Tusks",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee: +4 to hit, reach 5 ft. Hit: 7 (2d4+2) piercing damage."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 4,
+        "damage": {
+          "parts": [
+            [
+              "2d4+2",
+              "piercing"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C"
+    }
+  }
+}
