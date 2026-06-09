@@ -1,0 +1,144 @@
+{
+  "name": "Sperm Whale",
+  "type": "npc",
+  "img": "icons/creatures/fish/fish-shark-swimming.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 26
+      },
+      "dex": {
+        "value": 8
+      },
+      "con": {
+        "value": 17
+      },
+      "int": {
+        "value": 3
+      },
+      "wis": {
+        "value": 12
+      },
+      "cha": {
+        "value": 5
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 13,
+        "formula": "natural armor"
+      },
+      "hp": {
+        "value": 189,
+        "max": 189,
+        "formula": "14d20+42"
+      },
+      "speed": {
+        "value": 0,
+        "swim": 60
+      }
+    },
+    "details": {
+      "type": {
+        "value": "beast"
+      },
+      "alignment": "unaligned",
+      "cr": 8,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "senses": "blindsight 120 ft., passive Perception 11"
+    }
+  },
+  "items": [
+    {
+      "name": "Echolocation",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Can't use its blindsight while deafened."
+        }
+      }
+    },
+    {
+      "name": "Hold Breath",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Can hold its breath for 90 minutes."
+        }
+      }
+    },
+    {
+      "name": "Keen Hearing",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Advantage on Wisdom (Perception) checks that rely on hearing."
+        }
+      }
+    },
+    {
+      "name": "Multiattack",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Makes two attacks: one bite and one tail."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
+      }
+    },
+    {
+      "name": "Bite",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee: +11 to hit, reach 5 ft. Hit: 21 (3d8+8) piercing. Large or smaller creature must succeed DC 14 Dex save or be swallowed. Swallowed: total cover, 3 (1d6) acid at start of whale's turns. If whale takes 30+ damage in one turn from inside, DC 16 Con save or regurgitate."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 11,
+        "damage": {
+          "parts": [
+            [
+              "3d8+8",
+              "piercing"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Tail",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee: +11 to hit, reach 15 ft. Hit: 18 (3d6+8) bludgeoning damage, or 37 (6d6+16) against objects."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 11,
+        "damage": {
+          "parts": [
+            [
+              "3d6+8",
+              "bludgeoning"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C"
+    }
+  }
+}
