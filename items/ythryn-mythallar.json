@@ -1,0 +1,19 @@
+{
+  "name": "Ythryn Mythallar",
+  "type": "equipment",
+  "img": "icons/magic/light/orb-lightning-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Wondrous Item, Legendary (requires attunement by a spellcaster)</strong></p><p>A 50-ft-diameter crystal globe in an ornate cradle. Bright light 300 ft, dim light 300 ft. Up to 8 creatures can attune. All attuned creatures must agree before any property activates.</p><p><strong>Fly (action):</strong> Moves at 30 ft in any direction. All matter within 500 ft moves with it.</p><p><strong>Recharge Item (action):</strong> One held magic item within 30 ft regains all charges/uses. Can't recharge same item again until it self-recharges.</p><p><strong>Control Weather (action):</strong> Cast control weather, no components, no need to be outdoors, 50-mile radius. Must stay within 30 ft during casting time.</p><p><strong>Touching the globe:</strong> DC 22 Con save or 180 (20d10+70) radiant damage, half on success. Undead have disadvantage. Non-artifact objects touching the globe are instantly disintegrated.</p>"
+    },
+    "rarity": "legendary",
+    "identified": true,
+    "source": "Rime of the Frostmaiden",
+    "attunement": "required"
+  },
+  "flags": {
+    "rotf": {
+      "appendix": "D"
+    }
+  }
+}
