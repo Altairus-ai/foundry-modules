@@ -1,0 +1,19 @@
+{
+  "name": "Psi Crystal",
+  "type": "equipment",
+  "img": "icons/magic/light/orb-lightning-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Wondrous Item, Uncommon (requires attunement, INT 3+)</strong></p><p>Grants telepathy while attuned. Glows purple. Telepathy range scales with INT: 3-7 = 15 ft; 8-11 = 30 ft; 12-15 = 60 ft; 16+ = 120 ft.</p>"
+    },
+    "rarity": "uncommon",
+    "identified": true,
+    "source": "Rime of the Frostmaiden",
+    "attunement": "required"
+  },
+  "flags": {
+    "rotf": {
+      "appendix": "D"
+    }
+  }
+}
