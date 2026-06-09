@@ -1,0 +1,24 @@
+{
+  "name": "The Incantations of Iriolarthas",
+  "type": "equipment",
+  "img": "icons/sundries/books/book-black-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Spellbook, Unique</strong></p><p>Black leather covers with varnished dead worms and gold eye-sigil of Iriolarthas (Netherese lich). 60 pages of brittle yellow vellum.</p><p><strong>Contains:</strong> 1st: alarm, detect magic, identify, magic missile, shield, Tasha's hideous laughter, thunderwave. 2nd: arcane lock, continual flame, invisibility, knock, levitate, Melf's acid arrow, mirror image. 3rd: animate dead, bestow curse, clairvoyance, counterspell, dispel magic, fireball, glyph of warding. 4th: arcane eye, banishment, blight, dimension door, Evard's black tentacles, phantasmal killer. 5th: Bigby's hand, cloudkill, dominate person, planar binding, scrying, telekinesis. 6th: create undead, disintegrate, globe of invulnerability, move earth, Otto's irresistible dance. 7th: create magen, finger of death, prismatic spray, teleport. 8th: demiplane, dominate monster, mind blank, power word stun. 9th: blade of disaster, power word kill.</p><p><em>Found in Ythryn (Chapter 7).</em></p>"
+    },
+    "rarity": "legendary",
+    "identified": true,
+    "source": "Rime of the Frostmaiden",
+    "flags": {
+      "rotf": {
+        "appendix": "D",
+        "chapter": "7"
+      }
+    }
+  },
+  "flags": {
+    "rotf": {
+      "appendix": "D"
+    }
+  }
+}
