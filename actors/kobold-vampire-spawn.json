@@ -1,0 +1,142 @@
+{
+  "name": "Kobold Vampire Spawn",
+  "type": "npc",
+  "img": "icons/creatures/reptiles/lizard-armored-blue.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10
+      },
+      "dex": {
+        "value": 18
+      },
+      "con": {
+        "value": 16
+      },
+      "int": {
+        "value": 8
+      },
+      "wis": {
+        "value": 8
+      },
+      "cha": {
+        "value": 8
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 14,
+        "calc": "flat"
+      },
+      "hp": {
+        "value": 39,
+        "max": 39,
+        "formula": "6d6+18"
+      },
+      "speed": {
+        "value": 30,
+        "climb": 20
+      }
+    },
+    "details": {
+      "type": {
+        "value": "undead"
+      },
+      "alignment": "neutral evil",
+      "cr": 3,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "languages": {
+        "value": [
+          "common",
+          "draconic"
+        ]
+      },
+      "dr": {
+        "value": [
+          "necrotic"
+        ],
+        "custom": "bludgeoning, piercing, slashing from nonmagical attacks"
+      },
+      "senses": "darkvision 60 ft., passive Perception 11"
+    },
+    "saves": {
+      "dex": {
+        "proficient": 1
+      },
+      "wis": {
+        "proficient": 1
+      }
+    },
+    "skills": {
+      "prc": {
+        "value": 1
+      },
+      "ste": {
+        "value": 2
+      }
+    }
+  },
+  "items": [
+    {
+      "name": "Pack Tactics",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Advantage on attack rolls when at least one ally is within 5 ft. of the target and not incapacitated."
+        }
+      }
+    },
+    {
+      "name": "Regeneration",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Regains 10 hp at start of turn if it has at least 1 hp and isn't in sunlight or running water."
+        }
+      }
+    },
+    {
+      "name": "Vampire Weaknesses",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Forbiddance: Can't enter residence without invitation. Harmed by Running Water: 20 acid damage per turn. Stake to the Heart: destroyed if wooden piercing weapon driven into heart while incapacitated. Sunlight Hypersensitivity: 20 radiant damage per turn in sunlight."
+        }
+      }
+    },
+    {
+      "name": "Bite",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee: +6 to hit, reach 5 ft. Hit: 6 (1d4+4) piercing plus 5 (2d4) necrotic. Target's hp max reduced by necrotic amount; vampire regains that many hp."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 6,
+        "damage": {
+          "parts": [
+            [
+              "1d4+4",
+              "piercing"
+            ],
+            [
+              "2d4",
+              "necrotic"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C",
+      "chapter": "6"
+    }
+  }
+}
