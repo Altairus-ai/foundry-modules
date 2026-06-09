@@ -1,0 +1,25 @@
+{
+  "name": "Scroll of Tarrasque Summoning",
+  "type": "consumable",
+  "img": "icons/sundries/scrolls/scroll-ornate-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Scroll, Legendary</strong></p><p>Use an action to read \u2014 the tarrasque appears in an unoccupied space within 1 mile. Hostile to all creatures. Disappears when reduced to 0 hp.</p>"
+    },
+    "rarity": "legendary",
+    "identified": true,
+    "source": "Rime of the Frostmaiden",
+    "consumableType": "scroll",
+    "uses": {
+      "value": 1,
+      "max": 1,
+      "per": null,
+      "autoDestroy": true
+    }
+  },
+  "flags": {
+    "rotf": {
+      "appendix": "D"
+    }
+  }
+}
