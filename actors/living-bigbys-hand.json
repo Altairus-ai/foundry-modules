@@ -1,0 +1,142 @@
+{
+  "name": "Living Bigby's Hand",
+  "type": "npc",
+  "img": "icons/magic/control/debuff-energy-snare-teal.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 26
+      },
+      "dex": {
+        "value": 10
+      },
+      "con": {
+        "value": 20
+      },
+      "int": {
+        "value": 1
+      },
+      "wis": {
+        "value": 10
+      },
+      "cha": {
+        "value": 1
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 20,
+        "calc": "flat",
+        "formula": "natural armor"
+      },
+      "hp": {
+        "value": 52,
+        "max": 52,
+        "formula": "5d10+25"
+      },
+      "speed": {
+        "value": 0,
+        "fly": 60,
+        "hover": true
+      }
+    },
+    "details": {
+      "type": {
+        "value": "construct"
+      },
+      "alignment": "unaligned",
+      "cr": 4,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "di": {
+        "value": [
+          "poison"
+        ]
+      },
+      "ci": {
+        "value": [
+          "blinded",
+          "charmed",
+          "deafened",
+          "exhaustion",
+          "frightened",
+          "paralyzed",
+          "petrified",
+          "poisoned",
+          "unconscious"
+        ]
+      },
+      "senses": "darkvision 60 ft., passive Perception 12"
+    },
+    "saves": {
+      "dex": {
+        "proficient": 1
+      },
+      "wis": {
+        "proficient": 1
+      }
+    }
+  },
+  "items": [
+    {
+      "name": "Magic Resistance",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Advantage on saving throws against spells and other magical effects."
+        }
+      }
+    },
+    {
+      "name": "Unusual Nature",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Doesn't require air, food, drink, or sleep."
+        }
+      }
+    },
+    {
+      "name": "Force Fist",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee Spell Attack: +10 to hit, reach 5 ft. Hit: 26 (4d8+8) force damage. If target is Large or smaller, can move it up to 5 ft. and move with it without provoking opportunity attacks."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 10,
+        "damage": {
+          "parts": [
+            [
+              "4d8+8",
+              "force"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Grasping Hand",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Attempts to grab a Huge or smaller creature within 5 ft. DC 15 Dexterity save or be grappled (escape DC 15). Takes 15 (2d6+8) bludgeoning at start of each turn. Can only grapple one creature at a time."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C",
+      "chapter": "7"
+    }
+  }
+}
