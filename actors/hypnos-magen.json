@@ -1,7 +1,7 @@
 {
   "name": "Hypnos Magen",
   "type": "npc",
-  "img": "icons/magic/control/debuff-energy-snare-teal.webp",
+  "img": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Hypnos%20Magen.webp",
   "system": {
     "abilities": {
       "str": {
@@ -132,6 +132,11 @@
     "rotf": {
       "source": "Appendix C",
       "chapter": "7"
+    }
+  },
+  "prototypeToken": {
+    "texture": {
+      "src": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Hypnos%20Magen.webp"
     }
   }
 }
