@@ -1,7 +1,7 @@
 {
   "name": "Chwinga",
   "type": "npc",
-  "img": "icons/magic/nature/spirit-plant-flower.webp",
+  "img": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Chwinga.webp",
   "system": {
     "abilities": {
       "str": {
@@ -121,6 +121,11 @@
     "rotf": {
       "source": "Appendix C",
       "chapter": "various"
+    }
+  },
+  "prototypeToken": {
+    "texture": {
+      "src": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Chwinga.webp"
     }
   }
 }
