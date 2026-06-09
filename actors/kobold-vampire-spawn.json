@@ -1,7 +1,7 @@
 {
   "name": "Kobold Vampire Spawn",
   "type": "npc",
-  "img": "icons/creatures/reptiles/lizard-armored-blue.webp",
+  "img": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Kobold%20Vampire%20Spawn.webp",
   "system": {
     "abilities": {
       "str": {
@@ -137,6 +137,11 @@
     "rotf": {
       "source": "Appendix C",
       "chapter": "6"
+    }
+  },
+  "prototypeToken": {
+    "texture": {
+      "src": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Kobold%20Vampire%20Spawn.webp"
     }
   }
 }
