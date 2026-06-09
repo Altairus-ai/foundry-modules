@@ -1,142 +1,330 @@
 {
   "name": "Auril (Second Form)",
   "type": "npc",
-  "img": "icons/magic/nature/element-ice-snow.webp",
+  "img": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Auril%20(Second%20Form).webp",
   "system": {
     "abilities": {
-      "str": { "value": 16 },
-      "dex": { "value": 16 },
-      "con": { "value": 21 },
-      "int": { "value": 24 },
-      "wis": { "value": 26 },
-      "cha": { "value": 28 }
+      "str": {
+        "value": 16
+      },
+      "dex": {
+        "value": 16
+      },
+      "con": {
+        "value": 21
+      },
+      "int": {
+        "value": 24
+      },
+      "wis": {
+        "value": 26
+      },
+      "cha": {
+        "value": 28
+      }
     },
     "attributes": {
-      "ac": { "flat": 16, "calc": "flat", "formula": "natural armor" },
-      "hp": { "value": 136, "max": 136, "formula": "13d10+65" },
-      "speed": { "value": 30 }
+      "ac": {
+        "flat": 16,
+        "calc": "flat",
+        "formula": "natural armor"
+      },
+      "hp": {
+        "value": 136,
+        "max": 136,
+        "formula": "13d10+65"
+      },
+      "speed": {
+        "value": 30
+      }
     },
     "details": {
-      "type": { "value": "elemental" },
+      "type": {
+        "value": "elemental"
+      },
       "alignment": "neutral evil",
       "cr": 10,
       "source": "Rime of the Frostmaiden"
     },
     "traits": {
-      "languages": { "value": ["all"], "custom": "telepathy 1000 ft." },
-      "di": { "value": ["cold", "poison"] },
-      "dv": { "value": ["fire"] },
-      "ci": { "value": ["charmed", "exhaustion", "frightened", "paralyzed", "petrified", "poisoned", "stunned"] },
+      "languages": {
+        "value": [
+          "all"
+        ],
+        "custom": "telepathy 1000 ft."
+      },
+      "di": {
+        "value": [
+          "cold",
+          "poison"
+        ]
+      },
+      "dv": {
+        "value": [
+          "fire"
+        ]
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "exhaustion",
+          "frightened",
+          "paralyzed",
+          "petrified",
+          "poisoned",
+          "stunned"
+        ]
+      },
       "senses": "darkvision 120 ft., truesight 120 ft., passive Perception 26"
     },
     "saves": {
-      "con": { "proficient": 1 },
-      "wis": { "proficient": 1 }
+      "con": {
+        "proficient": 1
+      },
+      "wis": {
+        "proficient": 1
+      }
     },
     "skills": {
-      "dec": { "value": 2 },
-      "ins": { "value": 2 },
-      "itm": { "value": 2 },
-      "prc": { "value": 2 }
+      "dec": {
+        "value": 2
+      },
+      "ins": {
+        "value": 2
+      },
+      "itm": {
+        "value": 2
+      },
+      "prc": {
+        "value": 2
+      }
     },
     "resources": {
-      "legact": { "value": 3, "max": 3 },
-      "legres": { "value": 2, "max": 2 }
+      "legact": {
+        "value": 3,
+        "max": 3
+      },
+      "legres": {
+        "value": 2,
+        "max": 2
+      }
     }
   },
   "items": [
     {
       "name": "Divine Being",
       "type": "feat",
-      "system": { "description": { "value": "Auril can't be surprised and can't be changed into another form against her will." } }
+      "system": {
+        "description": {
+          "value": "Auril can't be surprised and can't be changed into another form against her will."
+        }
+      }
     },
     {
       "name": "Divine Rejuvenation",
       "type": "feat",
-      "system": { "description": { "value": "When Auril drops to 0 hit points, her body collapses into shards of ice, whereupon Auril instantly reappears in her third form, in an unoccupied space within 60 feet of where her second form was destroyed. Her initiative count doesn't change." } }
+      "system": {
+        "description": {
+          "value": "When Auril drops to 0 hit points, her body collapses into shards of ice, whereupon Auril instantly reappears in her third form, in an unoccupied space within 60 feet of where her second form was destroyed. Her initiative count doesn't change."
+        }
+      }
     },
     {
       "name": "Legendary Resistance (2/Day in This Form)",
       "type": "feat",
-      "system": { "description": { "value": "If Auril fails a saving throw, she can choose to succeed instead." } }
+      "system": {
+        "description": {
+          "value": "If Auril fails a saving throw, she can choose to succeed instead."
+        }
+      }
     },
     {
       "name": "Magic Resistance",
       "type": "feat",
-      "system": { "description": { "value": "Auril has advantage on saving throws against spells and other magical effects." } }
+      "system": {
+        "description": {
+          "value": "Auril has advantage on saving throws against spells and other magical effects."
+        }
+      }
     },
     {
       "name": "Multiattack",
       "type": "feat",
       "system": {
-        "description": { "value": "Auril attacks twice with her ice morningstar or hurls three ice darts." },
-        "activation": { "type": "action", "cost": 1 }
+        "description": {
+          "value": "Auril attacks twice with her ice morningstar or hurls three ice darts."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
       }
     },
     {
       "name": "Ice Morningstar",
       "type": "weapon",
       "system": {
-        "description": { "value": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d8+3) piercing damage plus 9 (2d8) cold damage." },
-        "activation": { "type": "action", "cost": 1 },
-        "range": { "value": 5, "units": "ft" },
+        "description": {
+          "value": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d8+3) piercing damage plus 9 (2d8) cold damage."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "range": {
+          "value": 5,
+          "units": "ft"
+        },
         "attackBonus": 7,
-        "damage": { "parts": [["1d8+3", "piercing"], ["2d8", "cold"]] }
+        "damage": {
+          "parts": [
+            [
+              "1d8+3",
+              "piercing"
+            ],
+            [
+              "2d8",
+              "cold"
+            ]
+          ]
+        }
       }
     },
     {
       "name": "Ice Dart",
       "type": "weapon",
       "system": {
-        "description": { "value": "Ranged Weapon Attack: +7 to hit, range 20/60 ft., one target. Hit: 5 (1d4+3) piercing damage plus 3 (1d6) cold damage." },
-        "activation": { "type": "action", "cost": 1 },
-        "range": { "value": 20, "long": 60, "units": "ft" },
+        "description": {
+          "value": "Ranged Weapon Attack: +7 to hit, range 20/60 ft., one target. Hit: 5 (1d4+3) piercing damage plus 3 (1d6) cold damage."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "range": {
+          "value": 20,
+          "long": 60,
+          "units": "ft"
+        },
         "attackBonus": 7,
-        "damage": { "parts": [["1d4+3", "piercing"], ["1d6", "cold"]] }
+        "damage": {
+          "parts": [
+            [
+              "1d4+3",
+              "piercing"
+            ],
+            [
+              "1d6",
+              "cold"
+            ]
+          ]
+        }
       }
     },
     {
       "name": "Cone of Cold (Recharges after Short or Long Rest)",
       "type": "feat",
       "system": {
-        "description": { "value": "Each creature in a 60-foot cone must make a DC 21 Constitution saving throw, taking 36 (8d8) cold damage on a failed save, or half on a success." },
-        "activation": { "type": "action", "cost": 1 },
-        "save": { "ability": "con", "dc": 21 },
-        "damage": { "parts": [["8d8", "cold"]] }
+        "description": {
+          "value": "Each creature in a 60-foot cone must make a DC 21 Constitution saving throw, taking 36 (8d8) cold damage on a failed save, or half on a success."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "save": {
+          "ability": "con",
+          "dc": 21
+        },
+        "damage": {
+          "parts": [
+            [
+              "8d8",
+              "cold"
+            ]
+          ]
+        }
       }
     },
     {
       "name": "Create Ice Mephit (3/Day)",
       "type": "feat",
       "system": {
-        "description": { "value": "Auril breaks off an icicle from her body and hurls it into an unoccupied space she can see within 20 feet of her, where it magically transforms into an ice mephit. The mephit acts immediately after Auril and obeys her commands." },
-        "activation": { "type": "action", "cost": 1 }
+        "description": {
+          "value": "Auril breaks off an icicle from her body and hurls it into an unoccupied space she can see within 20 feet of her, where it magically transforms into an ice mephit. The mephit acts immediately after Auril and obeys her commands."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
       }
     },
     {
       "name": "Ice Stasis (Recharge 5-6)",
       "type": "feat",
       "system": {
-        "description": { "value": "Auril targets a creature she can see within 60 feet of a gem-sized ice crystal she creates within 5 feet of her. The target must succeed on a DC 21 Charisma saving throw or become trapped in the crystal (stunned, total cover, 21 (6d6) cold damage at start of each turn). The creature can repeat the save at end of each turn. The crystal is AC 18, 9 hp, immune to all damage except fire." },
-        "activation": { "type": "action", "cost": 1 },
-        "save": { "ability": "cha", "dc": 21 }
+        "description": {
+          "value": "Auril targets a creature she can see within 60 feet of a gem-sized ice crystal she creates within 5 feet of her. The target must succeed on a DC 21 Charisma saving throw or become trapped in the crystal (stunned, total cover, 21 (6d6) cold damage at start of each turn). The creature can repeat the save at end of each turn. The crystal is AC 18, 9 hp, immune to all damage except fire."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "save": {
+          "ability": "cha",
+          "dc": 21
+        }
       }
     },
     {
       "name": "Legendary Action: Attack",
       "type": "feat",
-      "system": { "description": { "value": "Auril makes one weapon attack." }, "activation": { "type": "legendary", "cost": 1 } }
+      "system": {
+        "description": {
+          "value": "Auril makes one weapon attack."
+        },
+        "activation": {
+          "type": "legendary",
+          "cost": 1
+        }
+      }
     },
     {
       "name": "Legendary Action: Ice Flurry",
       "type": "feat",
-      "system": { "description": { "value": "Each creature within 30 feet of Auril takes 5 (2d4) piercing damage from swirling ice, and nonmagical open flames in that area are extinguished." }, "activation": { "type": "legendary", "cost": 2 } }
+      "system": {
+        "description": {
+          "value": "Each creature within 30 feet of Auril takes 5 (2d4) piercing damage from swirling ice, and nonmagical open flames in that area are extinguished."
+        },
+        "activation": {
+          "type": "legendary",
+          "cost": 2
+        }
+      }
     },
     {
       "name": "Legendary Action: Splinter",
       "type": "feat",
-      "system": { "description": { "value": "Auril uses Create Ice Mephit or causes one ice mephit she can see within 60 feet to explode. Each creature within 10 feet of the exploding mephit must succeed on a DC 21 Dexterity saving throw, taking 13 (3d8) piercing damage on a failed save." }, "activation": { "type": "legendary", "cost": 3 } }
+      "system": {
+        "description": {
+          "value": "Auril uses Create Ice Mephit or causes one ice mephit she can see within 60 feet to explode. Each creature within 10 feet of the exploding mephit must succeed on a DC 21 Dexterity saving throw, taking 13 (3d8) piercing damage on a failed save."
+        },
+        "activation": {
+          "type": "legendary",
+          "cost": 3
+        }
+      }
     }
   ],
-  "flags": { "rotf": { "source": "Appendix C", "chapter": "boss" } }
+  "flags": {
+    "rotf": {
+      "source": "Appendix C",
+      "chapter": "boss"
+    }
+  },
+  "prototypeToken": {
+    "texture": {
+      "src": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Auril%20(Second%20Form).webp"
+    }
+  }
 }
