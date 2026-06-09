@@ -18,8 +18,8 @@
     { "name": "scenes",  "label": "The Haunt - Scenes",  "path": "packs/scenes.db",  "type": "Scene" }
   ],
   "url": "https://github.com/Altairus-ai/foundry-modules",
-  "manifest": "https://raw.githubusercontent.com/Altairus-ai/foundry-modules/main/the-haunt-pbpublishing/module.json",
-  "download": "https://github.com/Altairus-ai/foundry-modules/releases/latest/download/the-haunt-pbpublishing.zip",
+  "manifest": "https://raw.githubusercontent.com/Altairus-ai/foundry-modules/release/the-haunt/module.json",
+  "download": "https://codeload.github.com/Altairus-ai/foundry-modules/zip/refs/heads/release/the-haunt",
   "license": "See adventure PDF. Map art by Chris Bissette (loottheroom.uk).",
   "flags": {
     "questwright": {
