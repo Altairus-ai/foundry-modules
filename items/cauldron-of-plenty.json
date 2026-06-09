@@ -1,0 +1,19 @@
+{
+  "name": "Cauldron of Plenty",
+  "type": "equipment",
+  "img": "icons/containers/pot/cauldron-iron.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Wondrous Item, Rare</strong></p><p>Thick copper cauldron, green with age, 4 ft wide, 50 lbs, holds 30 gallons. Pour water in and stir 1 minute \u2014 transforms into hearty hot stew feeding up to 4 people per gallon. Creates stew 3 times per day, then ceases until next dawn.</p>"
+    },
+    "rarity": "rare",
+    "identified": true,
+    "source": "Rime of the Frostmaiden",
+    "weight": 50
+  },
+  "flags": {
+    "rotf": {
+      "appendix": "D"
+    }
+  }
+}
