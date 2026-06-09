@@ -1,0 +1,150 @@
+{
+  "name": "Frost Giant Skeleton",
+  "type": "npc",
+  "img": "icons/creatures/undead/skeleton-humanoid-bone-grey.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 23
+      },
+      "dex": {
+        "value": 9
+      },
+      "con": {
+        "value": 15
+      },
+      "int": {
+        "value": 6
+      },
+      "wis": {
+        "value": 8
+      },
+      "cha": {
+        "value": 5
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 14,
+        "calc": "flat",
+        "formula": "armor scraps"
+      },
+      "hp": {
+        "value": 102,
+        "max": 102,
+        "formula": "12d12+24"
+      },
+      "speed": {
+        "value": 40
+      }
+    },
+    "details": {
+      "type": {
+        "value": "undead"
+      },
+      "alignment": "lawful evil",
+      "cr": 6,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "languages": {
+        "custom": "understands Giant but can't speak"
+      },
+      "dv": {
+        "value": [
+          "bludgeoning"
+        ]
+      },
+      "di": {
+        "value": [
+          "cold",
+          "poison"
+        ]
+      },
+      "ci": {
+        "value": [
+          "exhaustion",
+          "poisoned"
+        ]
+      },
+      "senses": "darkvision 60 ft., passive Perception 9"
+    }
+  },
+  "items": [
+    {
+      "name": "Unusual Nature",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "The skeleton doesn't require air, food, drink, or sleep."
+        }
+      }
+    },
+    {
+      "name": "Multiattack",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "The skeleton makes two greataxe attacks."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
+      }
+    },
+    {
+      "name": "Greataxe",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee Weapon Attack: +9 to hit, reach 10 ft. Hit: 25 (3d12+6) slashing damage."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 9,
+        "damage": {
+          "parts": [
+            [
+              "3d12+6",
+              "slashing"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Freezing Stare",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Targets one creature within 60 ft. DC 13 Constitution save or take 35 (10d6) cold damage and be paralyzed until end of its next turn."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "save": {
+          "ability": "con",
+          "dc": 13
+        },
+        "damage": {
+          "parts": [
+            [
+              "10d6",
+              "cold"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C",
+      "chapter": "6"
+    }
+  }
+}
