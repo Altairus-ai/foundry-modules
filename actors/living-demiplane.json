@@ -1,0 +1,119 @@
+{
+  "name": "Living Demiplane",
+  "type": "npc",
+  "img": "icons/magic/planar/portal-circle-runes.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 1
+      },
+      "dex": {
+        "value": 10
+      },
+      "con": {
+        "value": 10
+      },
+      "int": {
+        "value": 1
+      },
+      "wis": {
+        "value": 10
+      },
+      "cha": {
+        "value": 1
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 10,
+        "calc": "flat"
+      },
+      "hp": {
+        "value": 31,
+        "max": 31,
+        "formula": "7d8"
+      },
+      "speed": {
+        "value": 30,
+        "climb": 30
+      }
+    },
+    "details": {
+      "type": {
+        "value": "construct"
+      },
+      "alignment": "unaligned",
+      "cr": 0,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "di": {
+        "value": [
+          "poison"
+        ]
+      },
+      "ci": {
+        "value": [
+          "blinded",
+          "deafened",
+          "charmed",
+          "exhaustion",
+          "frightened",
+          "grappled",
+          "paralyzed",
+          "petrified",
+          "poisoned",
+          "prone",
+          "restrained",
+          "stunned",
+          "unconscious"
+        ]
+      },
+      "senses": "darkvision 60 ft., passive Perception 10"
+    }
+  },
+  "items": [
+    {
+      "name": "Dimensional Form",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Can enter another creature's space and vice versa. Can move through spaces as narrow as 1 inch without squeezing. Can't detach from solid surfaces. Destroyed if it has no surface to attach to."
+        }
+      }
+    },
+    {
+      "name": "Extradimensional Chamber",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "When entering a creature's space for the first time on a turn, that creature must succeed DC 10 Dexterity save or be pulled into an unfurnished 30-ft-cube stone chamber. No exits except via plane shift. Creatures inside can't affect the living spell but can damage the chamber (each 5-ft section: AC 17, 50 hp, immune to poison/psychic/nonmagical physical)."
+        }
+      }
+    },
+    {
+      "name": "Magic Resistance",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Advantage on saving throws against spells and other magical effects."
+        }
+      }
+    },
+    {
+      "name": "Planar Destruction",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Destroyed when it or a 5-ft section of its chamber is reduced to 0 hp, or when it has no surface to attach to. Contents of chamber expelled when destroyed."
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C",
+      "chapter": "7"
+    }
+  }
+}
