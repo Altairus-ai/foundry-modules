@@ -1,7 +1,7 @@
 {
   "name": "Sperm Whale",
   "type": "npc",
-  "img": "icons/creatures/fish/fish-shark-swimming.webp",
+  "img": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Sperm%20Whale.webp",
   "system": {
     "abilities": {
       "str": {
@@ -139,6 +139,11 @@
   "flags": {
     "rotf": {
       "source": "Appendix C"
+    }
+  },
+  "prototypeToken": {
+    "texture": {
+      "src": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Sperm%20Whale.webp"
     }
   }
 }
