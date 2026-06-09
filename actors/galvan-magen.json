@@ -1,0 +1,167 @@
+{
+  "name": "Galvan Magen",
+  "type": "npc",
+  "img": "icons/magic/lightning/bolt-blue.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10
+      },
+      "dex": {
+        "value": 18
+      },
+      "con": {
+        "value": 18
+      },
+      "int": {
+        "value": 12
+      },
+      "wis": {
+        "value": 10
+      },
+      "cha": {
+        "value": 7
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 14,
+        "calc": "flat"
+      },
+      "hp": {
+        "value": 68,
+        "max": 68,
+        "formula": "8d8+32"
+      },
+      "speed": {
+        "value": 30,
+        "fly": 30,
+        "hover": true
+      }
+    },
+    "details": {
+      "type": {
+        "value": "construct"
+      },
+      "alignment": "unaligned",
+      "cr": 3,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "languages": {
+        "custom": "understands creator's languages but can't speak"
+      },
+      "di": {
+        "value": [
+          "lightning",
+          "poison"
+        ]
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "exhaustion",
+          "frightened",
+          "paralyzed",
+          "poisoned"
+        ]
+      },
+      "senses": "passive Perception 10"
+    }
+  },
+  "items": [
+    {
+      "name": "Fiery End",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "If the magen dies, its body disintegrates in a harmless burst of fire and smoke."
+        }
+      }
+    },
+    {
+      "name": "Magic Resistance",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Advantage on saving throws against spells and other magical effects."
+        }
+      }
+    },
+    {
+      "name": "Unusual Nature",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Doesn't require air, food, drink, or sleep."
+        }
+      }
+    },
+    {
+      "name": "Multiattack",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Makes two Shocking Touch attacks."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
+      }
+    },
+    {
+      "name": "Shocking Touch",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee Spell Attack: +6 to hit, reach 5 ft. Hit: 7 (1d6+4) lightning damage. Advantage if target wears metal armor."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 6,
+        "damage": {
+          "parts": [
+            [
+              "1d6+4",
+              "lightning"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Static Discharge (Recharge 5-6)",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "60-foot line, 5 ft. wide. DC 14 Dexterity save (disadvantage in metal armor) or take 22 (4d10) lightning damage, half on success."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "save": {
+          "ability": "dex",
+          "dc": 14
+        },
+        "damage": {
+          "parts": [
+            [
+              "4d10",
+              "lightning"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C",
+      "chapter": "7"
+    }
+  }
+}
