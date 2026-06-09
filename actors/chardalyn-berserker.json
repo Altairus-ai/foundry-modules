@@ -1,0 +1,148 @@
+{
+  "name": "Chardalyn Berserker",
+  "type": "npc",
+  "img": "icons/magic/unholy/strike-beam-blood.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 16
+      },
+      "dex": {
+        "value": 12
+      },
+      "con": {
+        "value": 17
+      },
+      "int": {
+        "value": 9
+      },
+      "wis": {
+        "value": 11
+      },
+      "cha": {
+        "value": 9
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 13,
+        "calc": "flat",
+        "formula": "hide armor"
+      },
+      "hp": {
+        "value": 90,
+        "max": 90,
+        "formula": "12d8+36"
+      },
+      "speed": {
+        "value": 30
+      }
+    },
+    "details": {
+      "type": {
+        "value": "fiend"
+      },
+      "alignment": "chaotic evil",
+      "cr": 4,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "languages": {
+        "custom": "any one language (usually Common)"
+      },
+      "senses": "passive Perception 10"
+    },
+    "skills": {
+      "sur": {
+        "value": 1
+      }
+    }
+  },
+  "items": [
+    {
+      "name": "Chardalyn Madness",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Roll a d6 at start of each turn. On a 1, the berserker does nothing except speak to a nonexistent evil master."
+        }
+      }
+    },
+    {
+      "name": "Reckless",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "At the start of its turn, can gain advantage on all melee weapon attacks that turn, but attack rolls against it have advantage until start of its next turn."
+        }
+      }
+    },
+    {
+      "name": "Multiattack",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "The berserker attacks three times with a melee weapon."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
+      }
+    },
+    {
+      "name": "Chardalyn Flail",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee Weapon Attack: +5 to hit, reach 5 ft. Hit: 7 (1d8+3) bludgeoning damage. DC 13 Constitution save or poisoned until end of its next turn."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 5,
+        "damage": {
+          "parts": [
+            [
+              "1d8+3",
+              "bludgeoning"
+            ]
+          ]
+        },
+        "save": {
+          "ability": "con",
+          "dc": 13
+        }
+      }
+    },
+    {
+      "name": "Chardalyn Javelin",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 30/120 ft. Hit: 6 (1d6+3) piercing damage. DC 13 Constitution save or poisoned until end of its next turn."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 5,
+        "damage": {
+          "parts": [
+            [
+              "1d6+3",
+              "piercing"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C",
+      "chapter": "2"
+    }
+  }
+}
