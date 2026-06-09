@@ -1,7 +1,7 @@
 {
   "name": "Mountain Goat",
   "type": "npc",
-  "img": "icons/creatures/mammals/goat-horned.webp",
+  "img": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Mountain%20Goat.webp",
   "system": {
     "abilities": {
       "str": {
@@ -94,6 +94,11 @@
   "flags": {
     "rotf": {
       "source": "Appendix C"
+    }
+  },
+  "prototypeToken": {
+    "texture": {
+      "src": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Mountain%20Goat.webp"
     }
   }
 }
