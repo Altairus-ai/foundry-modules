@@ -1,0 +1,195 @@
+{
+  "name": "Nass Lantomir's Ghost",
+  "type": "npc",
+  "img": "icons/magic/unholy/spirit-energy-purple.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 7
+      },
+      "dex": {
+        "value": 13
+      },
+      "con": {
+        "value": 10
+      },
+      "int": {
+        "value": 17
+      },
+      "wis": {
+        "value": 12
+      },
+      "cha": {
+        "value": 17
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 11,
+        "calc": "flat"
+      },
+      "hp": {
+        "value": 45,
+        "max": 45,
+        "formula": "10d8"
+      },
+      "speed": {
+        "value": 0,
+        "fly": 40,
+        "hover": true
+      }
+    },
+    "details": {
+      "type": {
+        "value": "undead"
+      },
+      "alignment": "neutral evil",
+      "cr": 6,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "languages": {
+        "value": [
+          "abyssal",
+          "common",
+          "draconic"
+        ],
+        "custom": "Orc"
+      },
+      "dr": {
+        "value": [
+          "acid",
+          "fire",
+          "lightning",
+          "thunder"
+        ],
+        "custom": "bludgeoning, piercing, and slashing from nonmagical attacks"
+      },
+      "di": {
+        "value": [
+          "cold",
+          "necrotic",
+          "poison"
+        ]
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "exhaustion",
+          "frightened",
+          "grappled",
+          "paralyzed",
+          "petrified",
+          "poisoned",
+          "prone",
+          "restrained"
+        ]
+      },
+      "senses": "darkvision 60 ft., passive Perception 11"
+    }
+  },
+  "items": [
+    {
+      "name": "Ethereal Sight",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "The ghost can see 60 feet into the Ethereal Plane when on the Material Plane, and vice versa."
+        }
+      }
+    },
+    {
+      "name": "Incorporeal Movement",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "The ghost can move through creatures and objects as difficult terrain. Takes 5 (1d10) force damage if it ends its turn inside an object."
+        }
+      }
+    },
+    {
+      "name": "Spellcasting (6th-level)",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Spell save DC 14. Cantrips: mage hand, message, prestidigitation, ray of frost. 1st (4): detect magic, thunderwave. 3rd (3): counterspell. (No 2nd-level spells available.)"
+        }
+      }
+    },
+    {
+      "name": "Withering Touch",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee Weapon Attack: +6 to hit, reach 5 ft. Hit: 17 (4d6+3) necrotic damage."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "damage": {
+          "parts": [
+            [
+              "4d6+3",
+              "necrotic"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Etherealness",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "The ghost enters the Ethereal Plane from the Material Plane, or vice versa."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
+      }
+    },
+    {
+      "name": "Horrifying Visage",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Each non-undead within 60 ft. that can see the ghost must succeed on a DC 14 Wisdom save or be frightened for 1 minute. Fail by 5+ also ages target 1d4\u00d710 years."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "save": {
+          "ability": "wis",
+          "dc": 14
+        }
+      }
+    },
+    {
+      "name": "Possession (Recharge 6)",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "One humanoid within 5 ft. must succeed on a DC 14 Charisma save or be possessed. Ghost disappears, target is incapacitated and loses control of body. Lasts until body drops to 0 hp, ghost ends it as bonus action, or ghost is turned."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "save": {
+          "ability": "cha",
+          "dc": 14
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C",
+      "chapter": "npc",
+      "arcane_brotherhood": true
+    }
+  }
+}
