@@ -1,0 +1,19 @@
+{
+  "name": "Abracadabrus",
+  "type": "equipment",
+  "img": "icons/containers/chest/chest-wooden-carved.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Wondrous Item, Very Rare</strong></p><p>An ornate gemstone-studded wooden chest weighing 25 lbs while empty. Interior is a 1.5-ft cube. Has 20 charges. Use an action to touch the closed lid, expend 1 charge, and name nonmagical objects worth 1 gp or less total \u2014 they appear inside. Food spoils in 24 hours. Gems/metals vanish after 1 minute. Regains 1d20 charges at dawn. On final charge expended, roll d20: on 1, becomes ordinary chest.</p>"
+    },
+    "rarity": "veryRare",
+    "identified": true,
+    "source": "Rime of the Frostmaiden",
+    "weight": 25
+  },
+  "flags": {
+    "rotf": {
+      "appendix": "D"
+    }
+  }
+}
