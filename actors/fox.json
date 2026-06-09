@@ -1,7 +1,7 @@
 {
   "name": "Fox",
   "type": "npc",
-  "img": "icons/creatures/mammals/fox-white.webp",
+  "img": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Fox.webp",
   "system": {
     "abilities": {
       "str": {
@@ -93,6 +93,11 @@
   "flags": {
     "rotf": {
       "source": "Appendix C"
+    }
+  },
+  "prototypeToken": {
+    "texture": {
+      "src": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Fox.webp"
     }
   }
 }
