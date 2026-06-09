@@ -1,0 +1,19 @@
+{
+  "name": "Professor Orb",
+  "type": "equipment",
+  "img": "icons/magic/light/orb-lightning-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Wondrous Item, Rare</strong></p><p>Smooth 5-lb smoky gray quartz sphere. Sentient scholar personality. INT 18, Wis and Cha rolled 3d6 each. Speaks 4 languages, sees/hears 60 ft. No goals, can't initiate conflicts. Expert in 4 narrow academic subjects (+9 to recall lore from them). Casts mage hand at will (self-transport only).</p><p><strong>Professor Skant</strong> (Vellynne's orb): LG, Wis 11, Cha 9. Speaks Common, Draconic, Elvish, Loross. Chatterbox who finds everyone a dunderhead. Expertise: Netheril history, vampirism, Elverquisst liquor, the tarrasque.</p>"
+    },
+    "rarity": "rare",
+    "identified": true,
+    "source": "Rime of the Frostmaiden",
+    "weight": 5
+  },
+  "flags": {
+    "rotf": {
+      "appendix": "D"
+    }
+  }
+}
