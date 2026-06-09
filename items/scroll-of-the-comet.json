@@ -1,0 +1,25 @@
+{
+  "name": "Scroll of the Comet",
+  "type": "consumable",
+  "img": "icons/sundries/scrolls/scroll-ornate-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Scroll, Legendary</strong></p><p>Use an action outdoors \u2014 a comet crashes at a point within 1 mile you can see. Creates 50-ft-deep, 500-ft-radius crater. DC 20 Dex save or 30d10 force damage (half on success). All structures in crater destroyed; nonmagical unattended objects destroyed.</p>"
+    },
+    "rarity": "legendary",
+    "identified": true,
+    "source": "Rime of the Frostmaiden",
+    "consumableType": "scroll",
+    "uses": {
+      "value": 1,
+      "max": 1,
+      "per": null,
+      "autoDestroy": true
+    }
+  },
+  "flags": {
+    "rotf": {
+      "appendix": "D"
+    }
+  }
+}
