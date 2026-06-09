@@ -1,0 +1,200 @@
+{
+  "name": "Xardorok Sunblight",
+  "type": "npc",
+  "img": "icons/creatures/magical/construct-golem-stone-blue.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 16
+      },
+      "dex": {
+        "value": 11
+      },
+      "con": {
+        "value": 18
+      },
+      "int": {
+        "value": 12
+      },
+      "wis": {
+        "value": 13
+      },
+      "cha": {
+        "value": 18
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 16,
+        "calc": "flat",
+        "formula": "chain mail"
+      },
+      "hp": {
+        "value": 93,
+        "max": 93,
+        "formula": "11d8+44"
+      },
+      "speed": {
+        "value": 25
+      }
+    },
+    "details": {
+      "type": {
+        "value": "humanoid",
+        "subtype": "dwarf"
+      },
+      "alignment": "lawful evil",
+      "cr": 5,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "languages": {
+        "value": [
+          "dwarvish",
+          "undercommon"
+        ]
+      },
+      "dr": {
+        "value": [
+          "poison"
+        ]
+      },
+      "senses": "darkvision 120 ft., passive Perception 11"
+    },
+    "saves": {
+      "wis": {
+        "proficient": 1
+      },
+      "cha": {
+        "proficient": 1
+      }
+    },
+    "skills": {
+      "arc": {
+        "value": 2
+      },
+      "dec": {
+        "value": 2
+      },
+      "itm": {
+        "value": 2
+      }
+    }
+  },
+  "items": [
+    {
+      "name": "Duergar Resilience",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Advantage on saves against poison, spells, illusions, and to resist being charmed or paralyzed."
+        }
+      }
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "In sunlight, disadvantage on attack rolls and Wisdom (Perception) checks that rely on sight."
+        }
+      }
+    },
+    {
+      "name": "Innate Spellcasting",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Spellcasting ability Charisma (DC 15, +7). At will: eldritch blast, mage hand. 1/day each: hold person, suggestion."
+        }
+      }
+    },
+    {
+      "name": "Eldritch Blast",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Ranged Spell Attack: +7 to hit, range 120 ft. Hit: 9 (1d10+4) force damage."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "damage": {
+          "parts": [
+            [
+              "1d10+4",
+              "force"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Spiked Gauntlet",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee Weapon Attack: +6 to hit, reach 5 ft. Hit: 5 (1d4+3) piercing, or 8 (2d4+3) while enlarged."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "damage": {
+          "parts": [
+            [
+              "1d4+3",
+              "piercing"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Enlarge (Recharges after Short or Long Rest)",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "For 1 minute, Xardorok becomes Large, doubles damage dice on Strength-based weapon attacks, and has advantage on Strength checks and saves."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
+      }
+    },
+    {
+      "name": "Invisibility (Recharge 4-6)",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Xardorok turns invisible until he attacks, casts a spell, uses Enlarge, or concentration breaks."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
+      }
+    },
+    {
+      "name": "Hellish Rebuke (2/Day)",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Reaction: When damaged by a creature within 60 ft., that creature must make DC 15 Dex save or take 16 (3d10) fire damage, half on success."
+        },
+        "activation": {
+          "type": "reaction",
+          "cost": 1
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C",
+      "chapter": "3"
+    }
+  }
+}
