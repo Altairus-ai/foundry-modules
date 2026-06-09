@@ -1,0 +1,80 @@
+{
+  "name": "Hare",
+  "type": "npc",
+  "img": "icons/creatures/mammals/rabbit-brown.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 1
+      },
+      "dex": {
+        "value": 17
+      },
+      "con": {
+        "value": 9
+      },
+      "int": {
+        "value": 2
+      },
+      "wis": {
+        "value": 11
+      },
+      "cha": {
+        "value": 4
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 13
+      },
+      "hp": {
+        "value": 1,
+        "max": 1,
+        "formula": "1d4-1"
+      },
+      "speed": {
+        "value": 20,
+        "burrow": 5
+      }
+    },
+    "details": {
+      "type": {
+        "value": "beast"
+      },
+      "alignment": "unaligned",
+      "cr": 0,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "senses": "passive Perception 12"
+    },
+    "skills": {
+      "prc": {
+        "value": 1
+      },
+      "ste": {
+        "value": 1
+      }
+    }
+  },
+  "items": [
+    {
+      "name": "Escape",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Can take the Dash, Disengage, or Hide action as a bonus action on each of its turns."
+        },
+        "activation": {
+          "type": "bonus",
+          "cost": 1
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C"
+    }
+  }
+}
