@@ -1,0 +1,99 @@
+{
+  "name": "Mountain Goat",
+  "type": "npc",
+  "img": "icons/creatures/mammals/goat-horned.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 14
+      },
+      "dex": {
+        "value": 12
+      },
+      "con": {
+        "value": 14
+      },
+      "int": {
+        "value": 2
+      },
+      "wis": {
+        "value": 10
+      },
+      "cha": {
+        "value": 5
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 11
+      },
+      "hp": {
+        "value": 13,
+        "max": 13,
+        "formula": "2d8+4"
+      },
+      "speed": {
+        "value": 40,
+        "climb": 30
+      }
+    },
+    "details": {
+      "type": {
+        "value": "beast"
+      },
+      "alignment": "unaligned",
+      "cr": 0.125,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "senses": "passive Perception 10"
+    }
+  },
+  "items": [
+    {
+      "name": "Charge",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "If moves 20 ft. straight toward target and hits with ram on same turn, target takes extra 3 (1d6) bludgeoning. DC 12 Strength save or knocked prone."
+        }
+      }
+    },
+    {
+      "name": "Sure-Footed",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Advantage on Strength and Dexterity saves against effects that would knock it prone."
+        }
+      }
+    },
+    {
+      "name": "Ram",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee: +4 to hit, reach 5 ft. Hit: 5 (1d6+2) bludgeoning damage."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 4,
+        "damage": {
+          "parts": [
+            [
+              "1d6+2",
+              "bludgeoning"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C"
+    }
+  }
+}
