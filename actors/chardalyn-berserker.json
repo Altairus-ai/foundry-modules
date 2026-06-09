@@ -1,7 +1,7 @@
 {
   "name": "Chardalyn Berserker",
   "type": "npc",
-  "img": "icons/magic/unholy/strike-beam-blood.webp",
+  "img": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Chardalyn%20Berserker.webp",
   "system": {
     "abilities": {
       "str": {
@@ -143,6 +143,11 @@
     "rotf": {
       "source": "Appendix C",
       "chapter": "2"
+    }
+  },
+  "prototypeToken": {
+    "texture": {
+      "src": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Chardalyn%20Berserker.webp"
     }
   }
 }
