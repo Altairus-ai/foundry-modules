@@ -1,0 +1,137 @@
+{
+  "name": "Hypnos Magen",
+  "type": "npc",
+  "img": "icons/magic/control/debuff-energy-snare-teal.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10
+      },
+      "dex": {
+        "value": 14
+      },
+      "con": {
+        "value": 18
+      },
+      "int": {
+        "value": 14
+      },
+      "wis": {
+        "value": 10
+      },
+      "cha": {
+        "value": 7
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 12,
+        "calc": "flat"
+      },
+      "hp": {
+        "value": 34,
+        "max": 34,
+        "formula": "4d8+16"
+      },
+      "speed": {
+        "value": 30
+      }
+    },
+    "details": {
+      "type": {
+        "value": "construct"
+      },
+      "alignment": "unaligned",
+      "cr": 1,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "languages": {
+        "custom": "understands creator's languages, telepathy 30 ft."
+      },
+      "di": {
+        "value": [
+          "poison"
+        ]
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "exhaustion",
+          "frightened",
+          "paralyzed",
+          "poisoned"
+        ]
+      },
+      "senses": "passive Perception 10"
+    }
+  },
+  "items": [
+    {
+      "name": "Fiery End",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "If the magen dies, its body disintegrates in a harmless burst of fire and smoke."
+        }
+      }
+    },
+    {
+      "name": "Magic Resistance",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Advantage on saving throws against spells and other magical effects."
+        }
+      }
+    },
+    {
+      "name": "Psychic Lash",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Targets one creature within 60 ft. DC 12 Wisdom save or take 11 (2d10) psychic damage."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "save": {
+          "ability": "wis",
+          "dc": 12
+        },
+        "damage": {
+          "parts": [
+            [
+              "2d10",
+              "psychic"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Suggestion",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Casts suggestion (save DC 12) on one creature it can communicate with telepathically. On success, target immune for 24 hours."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "save": {
+          "ability": "wis",
+          "dc": 12
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C",
+      "chapter": "7"
+    }
+  }
+}
