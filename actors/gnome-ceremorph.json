@@ -1,7 +1,7 @@
 {
   "name": "Gnome Ceremorph",
   "type": "npc",
-  "img": "icons/creatures/tentacles/tentacle-eyes-purple.webp",
+  "img": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Gnome%20Ceremorph.webp",
   "system": {
     "abilities": {
       "str": {
@@ -199,6 +199,11 @@
     "rotf": {
       "source": "Appendix C",
       "chapter": "7"
+    }
+  },
+  "prototypeToken": {
+    "texture": {
+      "src": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Gnome%20Ceremorph.webp"
     }
   }
 }
