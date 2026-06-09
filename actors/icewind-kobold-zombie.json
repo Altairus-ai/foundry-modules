@@ -1,0 +1,119 @@
+{
+  "name": "Icewind Kobold Zombie",
+  "type": "npc",
+  "img": "icons/creatures/undead/skeleton-humanoid-bone-grey.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 8
+      },
+      "dex": {
+        "value": 6
+      },
+      "con": {
+        "value": 16
+      },
+      "int": {
+        "value": 3
+      },
+      "wis": {
+        "value": 6
+      },
+      "cha": {
+        "value": 3
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 9,
+        "calc": "flat",
+        "formula": "scraps of hide armor"
+      },
+      "hp": {
+        "value": 19,
+        "max": 19,
+        "formula": "3d6+9"
+      },
+      "speed": {
+        "value": 20
+      }
+    },
+    "details": {
+      "type": {
+        "value": "undead"
+      },
+      "alignment": "neutral evil",
+      "cr": 0.125,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "languages": {
+        "custom": "understands Common and Draconic but can't speak"
+      },
+      "di": {
+        "value": [
+          "poison"
+        ]
+      },
+      "ci": {
+        "value": [
+          "poisoned"
+        ]
+      },
+      "senses": "darkvision 60 ft., passive Perception 8"
+    },
+    "saves": {
+      "wis": {
+        "proficient": 1
+      }
+    }
+  },
+  "items": [
+    {
+      "name": "Undead Fortitude",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "If damage reduces to 0 hp, must make Constitution save (DC 5 + damage taken) unless damage is radiant or from a critical hit. On success, drops to 1 hp instead."
+        }
+      }
+    },
+    {
+      "name": "Unusual Nature",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Doesn't require air, food, drink, or sleep."
+        }
+      }
+    },
+    {
+      "name": "Javelin",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee: +1 to hit, reach 5 ft. Hit: 2 (1d6-1) piercing damage."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 1,
+        "damage": {
+          "parts": [
+            [
+              "1d6-1",
+              "piercing"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C",
+      "chapter": "various"
+    }
+  }
+}
