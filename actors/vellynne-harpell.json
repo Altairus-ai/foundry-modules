@@ -1,0 +1,132 @@
+{
+  "name": "Vellynne Harpell",
+  "type": "npc",
+  "img": "icons/magic/unholy/strike-beam-blood.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10
+      },
+      "dex": {
+        "value": 12
+      },
+      "con": {
+        "value": 17
+      },
+      "int": {
+        "value": 18
+      },
+      "wis": {
+        "value": 15
+      },
+      "cha": {
+        "value": 13
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 13,
+        "calc": "flat",
+        "formula": "bracers of defense"
+      },
+      "hp": {
+        "value": 67,
+        "max": 67,
+        "formula": "9d8+27"
+      },
+      "speed": {
+        "value": 20
+      }
+    },
+    "details": {
+      "type": {
+        "value": "humanoid",
+        "subtype": "human"
+      },
+      "alignment": "neutral",
+      "cr": 4,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "languages": {
+        "value": [
+          "common",
+          "draconic",
+          "dwarvish",
+          "elvish"
+        ],
+        "custom": "Orc"
+      },
+      "senses": "passive Perception 12"
+    },
+    "saves": {
+      "int": {
+        "proficient": 1
+      },
+      "wis": {
+        "proficient": 1
+      }
+    },
+    "skills": {
+      "arc": {
+        "value": 2
+      },
+      "his": {
+        "value": 2
+      }
+    }
+  },
+  "items": [
+    {
+      "name": "Spellcasting (8th-level Necromancer)",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Spell save DC 14, +6 to hit. Cantrips: chill touch, light, mage hand, message, prestidigitation. 1st (4): comprehend languages, detect magic, ray of sickness, Tasha's hideous laughter. 2nd (3): darkvision, hold person, ray of enfeeblement. 3rd (3): animate dead, Leomund's tiny hut, vampiric touch. 4th (2): arcane eye, blight."
+        }
+      }
+    },
+    {
+      "name": "Vampiric Touch",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Melee Spell Attack: +6 to hit, reach 5 ft. Hit: 10 (3d6) necrotic damage. Vellynne regains HP equal to half damage dealt."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
+      }
+    },
+    {
+      "name": "Chill Touch",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Ranged Spell Attack: +6 to hit, range 120 ft. Hit: 9 (2d8) necrotic damage. Target can't regain HP until start of Vellynne's next turn."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
+      }
+    },
+    {
+      "name": "Wand of Magic Missiles",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "7 charges. Expend 1+ charges to cast magic missile at 1st level + 1 per extra charge. Regains 1d6+1 charges at dawn."
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C",
+      "chapter": "npc",
+      "arcane_brotherhood": true
+    }
+  }
+}
