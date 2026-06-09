@@ -1,0 +1,125 @@
+{
+  "name": "Giant Walrus",
+  "type": "npc",
+  "img": "icons/creatures/fish/fish-shark-swimming.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 22
+      },
+      "dex": {
+        "value": 9
+      },
+      "con": {
+        "value": 16
+      },
+      "int": {
+        "value": 3
+      },
+      "wis": {
+        "value": 11
+      },
+      "cha": {
+        "value": 4
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 9
+      },
+      "hp": {
+        "value": 85,
+        "max": 85,
+        "formula": "9d12+27"
+      },
+      "speed": {
+        "value": 20,
+        "swim": 40
+      }
+    },
+    "details": {
+      "type": {
+        "value": "beast"
+      },
+      "alignment": "unaligned",
+      "cr": 4,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "senses": "darkvision 60 ft., passive Perception 10"
+    }
+  },
+  "items": [
+    {
+      "name": "Hold Breath",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Can hold its breath for 30 minutes."
+        }
+      }
+    },
+    {
+      "name": "Multiattack",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Makes two attacks: one body flop and one tusks."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
+      }
+    },
+    {
+      "name": "Body Flop",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee: +8 to hit, reach 5 ft. Hit: 15 (2d8+6) bludgeoning damage."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 8,
+        "damage": {
+          "parts": [
+            [
+              "2d8+6",
+              "bludgeoning"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Tusks",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee: +8 to hit, reach 5 ft. Hit: 16 (3d6+6) piercing damage."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 8,
+        "damage": {
+          "parts": [
+            [
+              "3d6+6",
+              "piercing"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C"
+    }
+  }
+}
