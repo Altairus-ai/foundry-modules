@@ -1,0 +1,18 @@
+{
+  "name": "Hook of Fisher's Delight",
+  "type": "equipment",
+  "img": "icons/tools/fishing/hook-barbed-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Wondrous Item, Rare</strong></p><p>Tiny silver fishhook with gold feather. Tie to fishing line in 10-ft-cube water. After each uninterrupted hour, roll d6 \u2014 on 6, a magical fish appears. Roll d20: 1-10 green (nourishes 1 creature, spoils in 24h); 11-14 yellow (throwable knockdown, DC 15 Str); 15-18 blue (flying singing fish, 2d4h); 19-20 gold (nourishes + 2d10 temp hp). Resets at dawn.</p>"
+    },
+    "rarity": "rare",
+    "identified": true,
+    "source": "Rime of the Frostmaiden"
+  },
+  "flags": {
+    "rotf": {
+      "appendix": "D"
+    }
+  }
+}
