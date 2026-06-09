@@ -1,7 +1,7 @@
 {
   "name": "Yeti Tyke",
   "type": "npc",
-  "img": "icons/creatures/mammals/bear-grizzly.webp",
+  "img": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Yeti%20Tyke.webp",
   "system": {
     "abilities": {
       "str": {
@@ -109,6 +109,11 @@
     "rotf": {
       "source": "Appendix C",
       "chapter": "various"
+    }
+  },
+  "prototypeToken": {
+    "texture": {
+      "src": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Yeti%20Tyke.webp"
     }
   }
 }
