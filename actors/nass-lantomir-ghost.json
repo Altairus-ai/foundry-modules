@@ -1,7 +1,7 @@
 {
   "name": "Nass Lantomir's Ghost",
   "type": "npc",
-  "img": "icons/magic/unholy/spirit-energy-purple.webp",
+  "img": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Nass%20Lantomirs%20Ghost.webp",
   "system": {
     "abilities": {
       "str": {
@@ -190,6 +190,11 @@
       "source": "Appendix C",
       "chapter": "npc",
       "arcane_brotherhood": true
+    }
+  },
+  "prototypeToken": {
+    "texture": {
+      "src": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Nass%20Lantomirs%20Ghost.webp"
     }
   }
 }
