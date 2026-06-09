@@ -1,0 +1,133 @@
+{
+  "name": "Gnome Squidling",
+  "type": "npc",
+  "img": "icons/creatures/tentacles/tentacle-eyes-purple.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 4
+      },
+      "dex": {
+        "value": 7
+      },
+      "con": {
+        "value": 10
+      },
+      "int": {
+        "value": 4
+      },
+      "wis": {
+        "value": 10
+      },
+      "cha": {
+        "value": 3
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 8,
+        "calc": "flat"
+      },
+      "hp": {
+        "value": 10,
+        "max": 10,
+        "formula": "3d6"
+      },
+      "speed": {
+        "value": 15
+      }
+    },
+    "details": {
+      "type": {
+        "value": "aberration"
+      },
+      "alignment": "unaligned",
+      "cr": 0.5,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "languages": {
+        "custom": "understands Deep Speech and Gnomish, telepathy 60 ft."
+      },
+      "senses": "darkvision 60 ft., passive Perception 10"
+    }
+  },
+  "items": [
+    {
+      "name": "Innate Spellcasting (Psionics)",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Spellcasting ability Intelligence (DC 7). At will: levitate."
+        }
+      }
+    },
+    {
+      "name": "Magic Resistance",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Advantage on saving throws against spells and other magical effects."
+        }
+      }
+    },
+    {
+      "name": "Tentacles",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee: +0 to hit, reach 5 ft. Hit: 5 (2d4) psychic. If Medium or smaller, grappled (escape DC 7), DC 7 Intelligence save or stunned until grapple ends."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 0,
+        "damage": {
+          "parts": [
+            [
+              "2d4",
+              "psychic"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Extract Brain",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Melee: +0 to hit, reach 5 ft., one incapacitated creature grappled by squidling. Hit: 27 (5d10) piercing. If reduced to 0 hp, squidling kills target by extracting brain."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
+      }
+    },
+    {
+      "name": "Mind Tickle (Recharge 5-6)",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "30-foot cone. DC 7 Intelligence save or take 2 (1d4) psychic damage and be stunned until end of its next turn."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "save": {
+          "ability": "int",
+          "dc": 7
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C",
+      "chapter": "7"
+    }
+  }
+}
