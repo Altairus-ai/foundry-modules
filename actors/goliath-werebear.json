@@ -1,0 +1,218 @@
+{
+  "name": "Goliath Werebear",
+  "type": "npc",
+  "img": "icons/creatures/mammals/bear-grizzly.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 20
+      },
+      "dex": {
+        "value": 10
+      },
+      "con": {
+        "value": 18
+      },
+      "int": {
+        "value": 10
+      },
+      "wis": {
+        "value": 15
+      },
+      "cha": {
+        "value": 10
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 10,
+        "calc": "flat",
+        "formula": "10 humanoid, 12 bear/hybrid"
+      },
+      "hp": {
+        "value": 161,
+        "max": 161,
+        "formula": "19d8+76"
+      },
+      "speed": {
+        "value": 30,
+        "swim": 30
+      }
+    },
+    "details": {
+      "type": {
+        "value": "humanoid",
+        "subtype": "goliath, shapechanger"
+      },
+      "alignment": "neutral good",
+      "cr": 8,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "languages": {
+        "value": [
+          "common",
+          "giant"
+        ],
+        "custom": "can't speak in bear form"
+      },
+      "dr": {
+        "value": [
+          "cold"
+        ]
+      },
+      "dv": {
+        "value": [
+          "fire"
+        ]
+      },
+      "di": {
+        "custom": "bludgeoning, piercing, slashing from nonmagical weapons not silvered"
+      },
+      "senses": "passive Perception 18"
+    },
+    "skills": {
+      "ath": {
+        "value": 2
+      },
+      "prc": {
+        "value": 2
+      },
+      "sur": {
+        "value": 1
+      }
+    }
+  },
+  "items": [
+    {
+      "name": "Keen Smell",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Advantage on Wisdom (Perception) checks that rely on smell."
+        }
+      }
+    },
+    {
+      "name": "Mountain Born",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Acclimated to high altitude, including elevations above 20,000 feet."
+        }
+      }
+    },
+    {
+      "name": "Shapechanger",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Can polymorph into a Large bear-humanoid hybrid or Large polar bear, or back into goliath form. Statistics unchanged except size and AC. Reverts if it dies."
+        }
+      }
+    },
+    {
+      "name": "Multiattack",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Makes two melee attacks."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
+      }
+    },
+    {
+      "name": "Bite (Bear or Hybrid Form)",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee: +8 to hit, reach 5 ft. Hit: 16 (2d10+5) piercing. Humanoid target must succeed DC 15 Constitution save or be cursed with werebear lycanthropy."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 8,
+        "damage": {
+          "parts": [
+            [
+              "2d10+5",
+              "piercing"
+            ]
+          ]
+        },
+        "save": {
+          "ability": "con",
+          "dc": 15
+        }
+      }
+    },
+    {
+      "name": "Claw (Bear or Hybrid Form)",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee: +8 to hit, reach 5 ft. Hit: 14 (2d8+5) slashing damage."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 8,
+        "damage": {
+          "parts": [
+            [
+              "2d8+5",
+              "slashing"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Greataxe (Humanoid or Hybrid Form)",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee: +8 to hit, reach 5 ft. Hit: 11 (1d12+5) slashing damage."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 8,
+        "damage": {
+          "parts": [
+            [
+              "1d12+5",
+              "slashing"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Stone's Endurance (Recharges after Short or Long Rest)",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Reaction: Reduce damage taken by 10 (1d12+4)."
+        },
+        "activation": {
+          "type": "reaction",
+          "cost": 1
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C",
+      "chapter": "2",
+      "oyaminartok": true
+    }
+  }
+}
