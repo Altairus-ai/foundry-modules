@@ -1,0 +1,39 @@
+{
+  "name": "Create Magen",
+  "type": "spell",
+  "img": "icons/magic/control/debuff-energy-snare-teal.webp",
+  "system": {
+    "description": {
+      "value": "<p>While casting the spell, you place a vial of quicksilver in the chest of a life-sized human doll stuffed with ash or dust. You stitch up the doll and drip your blood on it. At the end of the casting, tap the doll with a crystal rod \u2014 it transforms into a magen clothed in whatever the doll was wearing. You choose the type of magen during casting (see Appendix C for statistics).</p><p>When the magen appears, your hit point maximum decreases by an amount equal to the magen's challenge rating (minimum 1). Only a <em>wish</em> spell can undo this reduction. Any magen you create obeys your commands without question.</p>",
+      "unidentified": ""
+    },
+    "level": 7,
+    "school": "trs",
+    "activation": {
+      "type": "hour",
+      "cost": 1
+    },
+    "duration": {
+      "value": 0,
+      "units": "inst"
+    },
+    "range": {
+      "value": 0,
+      "units": "touch"
+    },
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "materials": "a vial of quicksilver worth 500 gp and a life-sized human doll (both consumed), plus an intricate crystal rod worth at least 1,500 gp (not consumed)",
+      "concentration": false
+    },
+    "source": "Rime of the Frostmaiden, Appendix D"
+  },
+  "flags": {
+    "rotf": {
+      "appendix": "D",
+      "new_spell": true
+    }
+  }
+}
