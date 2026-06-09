@@ -1,0 +1,114 @@
+{
+  "name": "Yeti Tyke",
+  "type": "npc",
+  "img": "icons/creatures/mammals/bear-grizzly.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10
+      },
+      "dex": {
+        "value": 11
+      },
+      "con": {
+        "value": 12
+      },
+      "int": {
+        "value": 6
+      },
+      "wis": {
+        "value": 8
+      },
+      "cha": {
+        "value": 5
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 11,
+        "calc": "flat",
+        "formula": "natural armor"
+      },
+      "hp": {
+        "value": 9,
+        "max": 9,
+        "formula": "2d6+2"
+      },
+      "speed": {
+        "value": 20,
+        "climb": 20
+      }
+    },
+    "details": {
+      "type": {
+        "value": "monstrosity"
+      },
+      "alignment": "chaotic evil",
+      "cr": 0.125,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "languages": {
+        "custom": "understands Yeti but can't speak"
+      },
+      "di": {
+        "value": [
+          "cold"
+        ]
+      },
+      "senses": "darkvision 60 ft., passive Perception 9"
+    }
+  },
+  "items": [
+    {
+      "name": "Keen Smell",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Advantage on Wisdom (Perception) checks that rely on smell."
+        }
+      }
+    },
+    {
+      "name": "Snow Camouflage",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Advantage on Dexterity (Stealth) checks in snowy terrain."
+        }
+      }
+    },
+    {
+      "name": "Claw",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee: +2 to hit, reach 5 ft. Hit: 2 (1d4) slashing plus 2 (1d4) cold damage."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 2,
+        "damage": {
+          "parts": [
+            [
+              "1d4",
+              "slashing"
+            ],
+            [
+              "1d4",
+              "cold"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C",
+      "chapter": "various"
+    }
+  }
+}
