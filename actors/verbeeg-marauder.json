@@ -1,0 +1,130 @@
+{
+  "name": "Verbeeg Marauder",
+  "type": "npc",
+  "img": "icons/creatures/humanoids/humanoid-giant.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 19
+      },
+      "dex": {
+        "value": 11
+      },
+      "con": {
+        "value": 16
+      },
+      "int": {
+        "value": 11
+      },
+      "wis": {
+        "value": 10
+      },
+      "cha": {
+        "value": 9
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 14,
+        "calc": "flat",
+        "formula": "hide armor, shield"
+      },
+      "hp": {
+        "value": 85,
+        "max": 85,
+        "formula": "10d10+30"
+      },
+      "speed": {
+        "value": 40
+      }
+    },
+    "details": {
+      "type": {
+        "value": "giant"
+      },
+      "alignment": "neutral evil",
+      "cr": 4,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "languages": {
+        "value": [
+          "common",
+          "giant"
+        ]
+      },
+      "senses": "passive Perception 10"
+    },
+    "saves": {
+      "dex": {
+        "proficient": 1
+      },
+      "con": {
+        "proficient": 1
+      }
+    },
+    "skills": {
+      "ani": {
+        "value": 1
+      },
+      "ath": {
+        "value": 1
+      },
+      "ste": {
+        "value": 1
+      }
+    }
+  },
+  "items": [
+    {
+      "name": "Simple Weapon Wielder",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "A simple weapon deals one extra die of its damage when the verbeeg hits with it."
+        }
+      }
+    },
+    {
+      "name": "Multiattack",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Makes two melee attacks."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
+      }
+    },
+    {
+      "name": "Spear",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee or Ranged: +6 to hit, reach 5 ft. or range 20/60 ft. Hit: 14 (3d6+4) piercing, or 17 (3d8+4) if ranged or two-handed."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 6,
+        "damage": {
+          "parts": [
+            [
+              "3d6+4",
+              "piercing"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C",
+      "chapter": "2"
+    }
+  }
+}
