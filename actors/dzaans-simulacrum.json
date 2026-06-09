@@ -1,7 +1,7 @@
 {
   "name": "Dzaan's Simulacrum",
   "type": "npc",
-  "img": "icons/magic/control/debuff-energy-snare-teal.webp",
+  "img": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Dzaans%20Simulacrum.webp",
   "system": {
     "abilities": {
       "str": {
@@ -112,6 +112,11 @@
       "source": "Appendix C",
       "chapter": "npc",
       "arcane_brotherhood": true
+    }
+  },
+  "prototypeToken": {
+    "texture": {
+      "src": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/IDRotF/Dzaans%20Simulacrum.webp"
     }
   }
 }
