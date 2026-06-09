@@ -1,0 +1,208 @@
+{
+  "name": "Spitting Mimic",
+  "type": "npc",
+  "img": "icons/creatures/magical/humanoid-beast-demon-horned.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 21
+      },
+      "dex": {
+        "value": 12
+      },
+      "con": {
+        "value": 17
+      },
+      "int": {
+        "value": 9
+      },
+      "wis": {
+        "value": 15
+      },
+      "cha": {
+        "value": 10
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 14,
+        "calc": "flat",
+        "formula": "natural armor"
+      },
+      "hp": {
+        "value": 85,
+        "max": 85,
+        "formula": "10d10+30"
+      },
+      "speed": {
+        "value": 20
+      }
+    },
+    "details": {
+      "type": {
+        "value": "monstrosity",
+        "subtype": "shapechanger"
+      },
+      "alignment": "neutral",
+      "cr": 5,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "di": {
+        "value": [
+          "acid"
+        ]
+      },
+      "ci": {
+        "value": [
+          "prone"
+        ]
+      },
+      "senses": "darkvision 60 ft., passive Perception 12"
+    },
+    "skills": {
+      "ste": {
+        "value": 2
+      }
+    }
+  },
+  "items": [
+    {
+      "name": "Shapechanger",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Can polymorph into an object or back to amorphous form. Statistics unchanged. Reverts if it dies."
+        }
+      }
+    },
+    {
+      "name": "Adhesive (Object Form)",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Adheres to anything that touches it. Huge or smaller creatures are grappled (escape DC 16). Disadvantage on escape checks."
+        }
+      }
+    },
+    {
+      "name": "False Appearance (Object Form)",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "While motionless, indistinguishable from an ordinary object."
+        }
+      }
+    },
+    {
+      "name": "Grappler",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Advantage on attack rolls against any creature grappled by it."
+        }
+      }
+    },
+    {
+      "name": "Magic Resistance",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Advantage on saving throws against spells and other magical effects."
+        }
+      }
+    },
+    {
+      "name": "Multiattack",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Attacks three times: twice with pseudopods and once with bite."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
+      }
+    },
+    {
+      "name": "Pseudopod",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee Weapon Attack: +8 to hit, reach 10 ft. Hit: 10 (1d10+5) bludgeoning damage. In object form, target subjected to Adhesive."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 8,
+        "damage": {
+          "parts": [
+            [
+              "1d10+5",
+              "bludgeoning"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Bite",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee Weapon Attack: +8 to hit, reach 5 ft. Hit: 10 (1d10+5) piercing plus 7 (2d6) acid damage."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 8,
+        "damage": {
+          "parts": [
+            [
+              "1d10+5",
+              "piercing"
+            ],
+            [
+              "2d6",
+              "acid"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Spit Acid (Recharge 5-6)",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Spits acid at one creature within 30 ft. DC 14 Dexterity save or take 32 (9d6+1) acid damage, half on success."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "save": {
+          "ability": "dex",
+          "dc": 14
+        },
+        "damage": {
+          "parts": [
+            [
+              "9d6+1",
+              "acid"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C",
+      "chapter": "7"
+    }
+  }
+}
