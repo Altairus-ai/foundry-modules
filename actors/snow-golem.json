@@ -1,0 +1,170 @@
+{
+  "name": "Snow Golem",
+  "type": "npc",
+  "img": "icons/magic/nature/element-ice-snow.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 15
+      },
+      "dex": {
+        "value": 6
+      },
+      "con": {
+        "value": 14
+      },
+      "int": {
+        "value": 1
+      },
+      "wis": {
+        "value": 6
+      },
+      "cha": {
+        "value": 1
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 8,
+        "calc": "flat"
+      },
+      "hp": {
+        "value": 39,
+        "max": 39,
+        "formula": "6d8+12"
+      },
+      "speed": {
+        "value": 10
+      }
+    },
+    "details": {
+      "type": {
+        "value": "construct"
+      },
+      "alignment": "unaligned",
+      "cr": 3,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "dv": {
+        "value": [
+          "fire"
+        ]
+      },
+      "di": {
+        "value": [
+          "cold",
+          "poison"
+        ],
+        "custom": "bludgeoning, piercing, slashing from nonmagical attacks"
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "exhaustion",
+          "frightened",
+          "paralyzed",
+          "petrified",
+          "poisoned"
+        ]
+      },
+      "senses": "blindsight 60 ft., passive Perception 8"
+    }
+  },
+  "items": [
+    {
+      "name": "Cold Absorption",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "When subjected to cold damage, takes no damage and instead regains hp equal to the cold damage dealt."
+        }
+      }
+    },
+    {
+      "name": "Immutable Form",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Immune to any spell or effect that would alter its form."
+        }
+      }
+    },
+    {
+      "name": "Melt",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "While in extreme heat, loses 1d6 hp at start of each turn."
+        }
+      }
+    },
+    {
+      "name": "Multiattack",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Makes three melee attacks."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
+      }
+    },
+    {
+      "name": "Slam",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee: +4 to hit, reach 5 ft. Hit: 5 (1d6+2) bludgeoning plus 7 (2d6) cold damage."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 4,
+        "damage": {
+          "parts": [
+            [
+              "1d6+2",
+              "bludgeoning"
+            ],
+            [
+              "2d6",
+              "cold"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Snowball",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Ranged: +0 to hit, range 60 ft. Hit: 9 (2d6+2) cold damage."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 0,
+        "damage": {
+          "parts": [
+            [
+              "2d6+2",
+              "cold"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C",
+      "chapter": "various"
+    }
+  }
+}
