@@ -1,0 +1,172 @@
+{
+  "name": "Goliath Warrior",
+  "type": "npc",
+  "img": "icons/creatures/humanoids/humanoid-giant.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 18
+      },
+      "dex": {
+        "value": 11
+      },
+      "con": {
+        "value": 16
+      },
+      "int": {
+        "value": 10
+      },
+      "wis": {
+        "value": 15
+      },
+      "cha": {
+        "value": 10
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 12,
+        "calc": "flat",
+        "formula": "hide armor"
+      },
+      "hp": {
+        "value": 67,
+        "max": 67,
+        "formula": "9d8+27"
+      },
+      "speed": {
+        "value": 30
+      }
+    },
+    "details": {
+      "type": {
+        "value": "humanoid",
+        "subtype": "goliath"
+      },
+      "alignment": "any",
+      "cr": 3,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "languages": {
+        "value": [
+          "common",
+          "giant"
+        ]
+      },
+      "dr": {
+        "value": [
+          "cold"
+        ]
+      },
+      "senses": "passive Perception 14"
+    },
+    "skills": {
+      "ath": {
+        "value": 2
+      },
+      "prc": {
+        "value": 1
+      },
+      "sur": {
+        "value": 1
+      }
+    }
+  },
+  "items": [
+    {
+      "name": "Mountain Born",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Acclimated to high altitude, including elevations above 20,000 feet."
+        }
+      }
+    },
+    {
+      "name": "Powerful Build",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Counts as one size larger for carrying capacity and weight it can push, drag, or lift."
+        }
+      }
+    },
+    {
+      "name": "Multiattack",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Makes two greataxe attacks or hurls two javelins."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
+      }
+    },
+    {
+      "name": "Greataxe",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee: +6 to hit, reach 5 ft. Hit: 10 (1d12+4) slashing damage."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 6,
+        "damage": {
+          "parts": [
+            [
+              "1d12+4",
+              "slashing"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Javelin",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee or Ranged: +6 to hit, reach 5 ft. or range 30/120 ft. Hit: 7 (1d6+4) piercing damage."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 6,
+        "damage": {
+          "parts": [
+            [
+              "1d6+4",
+              "piercing"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Stone's Endurance (Recharges after Short or Long Rest)",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Reaction: When taking damage, reduce the damage taken by 9 (1d12+3)."
+        },
+        "activation": {
+          "type": "reaction",
+          "cost": 1
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C",
+      "chapter": "2"
+    }
+  }
+}
