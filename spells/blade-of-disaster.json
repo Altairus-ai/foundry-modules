@@ -1,0 +1,45 @@
+{
+  "name": "Blade of Disaster",
+  "type": "spell",
+  "img": "icons/weapons/swords/sword-guard-worn.webp",
+  "system": {
+    "description": {
+      "value": "<p>You create a blade-shaped planar rift about 3 feet long in an unoccupied space you can see within range. The blade lasts for the duration. When you cast this spell, you can make up to two melee spell attacks with the blade, each against a creature, loose object, or structure within 5 feet of the blade. On a hit, the target takes 4d12 force damage. This attack scores a critical hit if the number on the d20 is 18 or higher. On a critical hit, the blade deals an extra 8d12 force damage (total 12d12).</p><p>As a bonus action on your turn, you can move the blade up to 30 feet to an unoccupied space you can see, then make up to two melee spell attacks with it again.</p><p>The blade can harmlessly pass through any barrier, including a wall of force.</p>"
+    },
+    "level": 9,
+    "school": "con",
+    "activation": {
+      "type": "bonus",
+      "cost": 1
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "range": {
+      "value": 60,
+      "units": "ft"
+    },
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "concentration": true
+    },
+    "damage": {
+      "parts": [
+        [
+          "4d12",
+          "force"
+        ]
+      ]
+    },
+    "source": "Rime of the Frostmaiden, Appendix D"
+  },
+  "flags": {
+    "rotf": {
+      "appendix": "D",
+      "new_spell": true
+    }
+  }
+}
