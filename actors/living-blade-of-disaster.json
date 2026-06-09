@@ -1,0 +1,144 @@
+{
+  "name": "Living Blade of Disaster",
+  "type": "npc",
+  "img": "icons/weapons/swords/sword-guard-worn.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10
+      },
+      "dex": {
+        "value": 16
+      },
+      "con": {
+        "value": 19
+      },
+      "int": {
+        "value": 6
+      },
+      "wis": {
+        "value": 10
+      },
+      "cha": {
+        "value": 3
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 14,
+        "calc": "flat",
+        "formula": "natural armor"
+      },
+      "hp": {
+        "value": 67,
+        "max": 67,
+        "formula": "9d6+36"
+      },
+      "speed": {
+        "value": 0,
+        "fly": 30,
+        "hover": true
+      }
+    },
+    "details": {
+      "type": {
+        "value": "construct"
+      },
+      "alignment": "chaotic evil",
+      "cr": 8,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "di": {
+        "value": [
+          "poison"
+        ],
+        "custom": "bludgeoning, piercing, slashing from nonmagical attacks"
+      },
+      "ci": {
+        "value": [
+          "blinded",
+          "deafened",
+          "exhaustion",
+          "grappled",
+          "paralyzed",
+          "petrified",
+          "poisoned",
+          "restrained",
+          "unconscious"
+        ]
+      },
+      "senses": "darkvision 60 ft., passive Perception 10"
+    }
+  },
+  "items": [
+    {
+      "name": "Magic Resistance",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Advantage on saving throws against spells and other magical effects."
+        }
+      }
+    },
+    {
+      "name": "Unfettered",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Can move through any barrier, even a wall of magical force."
+        }
+      }
+    },
+    {
+      "name": "Unusual Nature",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Doesn't require air, food, drink, or sleep."
+        }
+      }
+    },
+    {
+      "name": "Force Blade",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee Spell Attack: +6 to hit, reach 5 ft. Hit: 26 (4d12) force damage, unless attack roll was 18+, which is auto-critical: 78 (12d12) force damage."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 6,
+        "damage": {
+          "parts": [
+            [
+              "4d12",
+              "force"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Preemptive Strike",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Reaction: Makes a melee attack against a creature that starts its turn within 5 feet of the living spell."
+        },
+        "activation": {
+          "type": "reaction",
+          "cost": 1
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C",
+      "chapter": "7"
+    }
+  }
+}
