@@ -1,0 +1,67 @@
+{
+  "id": "rotf-ch7-doom-of-ythryn",
+  "title": "RotF Chapter 7: Doom of Ythryn",
+  "description": "RotF Chapter 7: Doom of Ythryn \u2014 Journal entries and scenes. Load/unload per chapter for performance.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Szoradrin",
+      "url": "https://github.com/Altairus-ai"
+    }
+  ],
+  "packs": [
+    {
+      "name": "rotf-ch7-doom-of-ythryn-journals",
+      "label": "Journals",
+      "path": "packs/rotf-ch7-doom-of-ythryn-journals",
+      "type": "JournalEntry",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "rotf-ch7-doom-of-ythryn-scenes",
+      "label": "Scenes",
+      "path": "packs/rotf-ch7-doom-of-ythryn-scenes",
+      "type": "Scene",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "RotF Chapter 7: Doom of Ythryn",
+      "sorting": "a",
+      "color": "#5bb8f5",
+      "packs": [
+        "rotf-ch7-doom-of-ythryn-journals",
+        "rotf-ch7-doom-of-ythryn-scenes"
+      ]
+    }
+  ],
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.363",
+    "maximum": "14.999.999"
+  },
+  "relationships": {
+    "requires": [
+      {
+        "id": "rime-of-the-frostmaiden",
+        "type": "module"
+      },
+      {
+        "id": "dnd5e",
+        "type": "system"
+      }
+    ]
+  },
+  "url": "https://github.com/Altairus-ai/foundry-modules",
+  "manifest": "https://raw.githubusercontent.com/Altairus-ai/foundry-modules/release/rotf-ch7-doom-of-ythryn/module.json",
+  "download": "https://codeload.github.com/Altairus-ai/foundry-modules/zip/refs/heads/release/rotf-ch7-doom-of-ythryn"
+}
