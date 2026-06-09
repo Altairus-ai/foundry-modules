@@ -1,0 +1,64 @@
+{
+  "id": "the-haunt-pbpublishing",
+  "title": "The Haunt",
+  "description": "A one-shot D&D 5e horror adventure set in Montarthas Manor. Designed for 4th-5th level characters (3-5 players). Unlock the secrets and drive back the evil. By P.B. Publishing (Phil Beckwith). Converted by Questwright.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "14"
+  },
+  "authors": [
+    {
+      "name": "Phil Beckwith (P.B. Publishing)",
+      "url": "https://www.dmsguild.com/browse.php?author=Phil+Beckwith"
+    }
+  ],
+  "packs": [
+    {
+      "name": "actors",
+      "label": "The Haunt - Actors",
+      "path": "packs/actors",
+      "type": "Actor",
+      "system": "dnd5e"
+    },
+    {
+      "name": "items",
+      "label": "The Haunt - Items",
+      "path": "packs/items",
+      "type": "Item",
+      "system": "dnd5e"
+    },
+    {
+      "name": "journal",
+      "label": "The Haunt - Journal",
+      "path": "packs/journal",
+      "type": "JournalEntry"
+    },
+    {
+      "name": "tables",
+      "label": "The Haunt - Tables",
+      "path": "packs/tables",
+      "type": "RollTable"
+    },
+    {
+      "name": "scenes",
+      "label": "The Haunt - Scenes",
+      "path": "packs/scenes",
+      "type": "Scene"
+    }
+  ],
+  "url": "https://questwright.app",
+  "manifest": "https://raw.githubusercontent.com/Altairus-ai/foundry-modules/release/the-haunt-v14/module.json",
+  "download": "https://codeload.github.com/Altairus-ai/foundry-modules/zip/refs/heads/release/the-haunt-v14",
+  "license": "See adventure PDF. Map art by Chris Bissette (loottheroom.uk).",
+  "readme": "README.md",
+  "flags": {
+    "questwright": {
+      "version": "1.0.0",
+      "source": "The Haunt v2.4 PDF (P.B. Publishing)",
+      "converted": "2026-06-09",
+      "system": "dnd5e",
+      "tier": "T2-Full"
+    }
+  }
+}
