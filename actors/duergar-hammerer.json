@@ -1,0 +1,154 @@
+{
+  "name": "Duergar Hammerer",
+  "type": "npc",
+  "img": "icons/creatures/magical/construct-golem-stone-blue.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 17
+      },
+      "dex": {
+        "value": 7
+      },
+      "con": {
+        "value": 12
+      },
+      "int": {
+        "value": 5
+      },
+      "wis": {
+        "value": 5
+      },
+      "cha": {
+        "value": 5
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 17,
+        "calc": "flat",
+        "formula": "natural armor"
+      },
+      "hp": {
+        "value": 33,
+        "max": 33,
+        "formula": "6d8+6"
+      },
+      "speed": {
+        "value": 20
+      }
+    },
+    "details": {
+      "type": {
+        "value": "construct"
+      },
+      "alignment": "lawful evil",
+      "cr": 2,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "languages": {
+        "custom": "understands Dwarvish but can't speak"
+      },
+      "di": {
+        "value": [
+          "poison"
+        ]
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "exhaustion",
+          "frightened",
+          "paralyzed",
+          "petrified",
+          "poisoned"
+        ]
+      },
+      "senses": "darkvision 60 ft., passive Perception 7"
+    }
+  },
+  "items": [
+    {
+      "name": "Engine of Pain",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Once per turn, attacker can target the duergar inside. Attacker has disadvantage. On hit, deals extra 5 (1d10) damage to hammerer, which can Multiattack as reaction."
+        }
+      }
+    },
+    {
+      "name": "Siege Monster",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Deals double damage to objects and structures."
+        }
+      }
+    },
+    {
+      "name": "Multiattack",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Makes two attacks: one with claw and one with hammer."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
+      }
+    },
+    {
+      "name": "Claw",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee: +5 to hit, reach 5 ft. Hit: 6 (1d6+3) bludgeoning damage."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 5,
+        "damage": {
+          "parts": [
+            [
+              "1d6+3",
+              "bludgeoning"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Hammer",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee: +5 to hit, reach 5 ft. Hit: 10 (2d6+3) bludgeoning damage."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 5,
+        "damage": {
+          "parts": [
+            [
+              "2d6+3",
+              "bludgeoning"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C",
+      "chapter": "3"
+    }
+  }
+}
