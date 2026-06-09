@@ -1,0 +1,59 @@
+{
+  "name": "Frost Fingers",
+  "type": "spell",
+  "img": "icons/magic/water/ice-spike-snow.webp",
+  "system": {
+    "description": {
+      "value": "<p>Freezing cold blasts from your fingertips in a 15-foot cone. Each creature in that area must make a <strong>Constitution saving throw</strong>, taking <strong>2d8 cold damage</strong> on a failed save, or half as much on a successful one.</p><p>The cold freezes nonmagical liquids in the area that aren't being worn or carried.</p><p><strong>At Higher Levels:</strong> When cast using a slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.</p>",
+      "unidentified": ""
+    },
+    "level": 1,
+    "school": "evo",
+    "activation": {
+      "type": "action",
+      "cost": 1
+    },
+    "duration": {
+      "value": 0,
+      "units": "inst"
+    },
+    "range": {
+      "value": 15,
+      "units": "self"
+    },
+    "target": {
+      "value": 15,
+      "units": "ft",
+      "type": "cone"
+    },
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "concentration": false
+    },
+    "save": {
+      "ability": "con",
+      "scaling": "spell"
+    },
+    "damage": {
+      "parts": [
+        [
+          "2d8",
+          "cold"
+        ]
+      ],
+      "scaling": {
+        "mode": "level",
+        "formula": "1d8"
+      }
+    },
+    "source": "Rime of the Frostmaiden, Appendix D"
+  },
+  "flags": {
+    "rotf": {
+      "appendix": "D",
+      "new_spell": true
+    }
+  }
+}
