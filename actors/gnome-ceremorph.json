@@ -1,0 +1,204 @@
+{
+  "name": "Gnome Ceremorph",
+  "type": "npc",
+  "img": "icons/creatures/tentacles/tentacle-eyes-purple.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 6
+      },
+      "dex": {
+        "value": 14
+      },
+      "con": {
+        "value": 12
+      },
+      "int": {
+        "value": 19
+      },
+      "wis": {
+        "value": 17
+      },
+      "cha": {
+        "value": 17
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 16,
+        "calc": "flat",
+        "formula": "breastplate"
+      },
+      "hp": {
+        "value": 58,
+        "max": 58,
+        "formula": "13d6+13"
+      },
+      "speed": {
+        "value": 25
+      }
+    },
+    "details": {
+      "type": {
+        "value": "aberration"
+      },
+      "alignment": "any",
+      "cr": 5,
+      "source": "Rime of the Frostmaiden"
+    },
+    "traits": {
+      "languages": {
+        "value": [
+          "deep speech",
+          "gnomish",
+          "undercommon"
+        ],
+        "custom": "telepathy 120 ft."
+      },
+      "senses": "darkvision 120 ft., passive Perception 16"
+    },
+    "saves": {
+      "int": {
+        "proficient": 1
+      },
+      "wis": {
+        "proficient": 1
+      },
+      "cha": {
+        "proficient": 1
+      }
+    },
+    "skills": {
+      "arc": {
+        "value": 2
+      },
+      "dec": {
+        "value": 2
+      },
+      "ins": {
+        "value": 2
+      },
+      "prc": {
+        "value": 2
+      },
+      "per": {
+        "value": 2
+      },
+      "ste": {
+        "value": 1
+      }
+    }
+  },
+  "items": [
+    {
+      "name": "Innate Spellcasting (Psionics)",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Spellcasting ability Intelligence (DC 15). At will: detect thoughts, levitate. 1/day each: dominate monster, plane shift (self only)."
+        }
+      }
+    },
+    {
+      "name": "Magic Resistance",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Advantage on saving throws against spells and other magical effects."
+        }
+      }
+    },
+    {
+      "name": "Tentacles",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Melee: +7 to hit, reach 5 ft. Hit: 15 (2d10+4) psychic damage. If Medium or smaller, target is grappled (escape DC 9) and must succeed DC 15 Intelligence save or be stunned until grapple ends."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 7,
+        "damage": {
+          "parts": [
+            [
+              "2d10+4",
+              "psychic"
+            ]
+          ]
+        },
+        "save": {
+          "ability": "int",
+          "dc": 15
+        }
+      }
+    },
+    {
+      "name": "Extract Brain",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "Melee: +7 to hit, reach 5 ft., one incapacitated humanoid grappled by the ceremorph. Hit: 55 (10d10) piercing damage. If reduced to 0 hp, ceremorph kills target by extracting and devouring its brain."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        }
+      }
+    },
+    {
+      "name": "Laser Pistol",
+      "type": "weapon",
+      "system": {
+        "description": {
+          "value": "Ranged: +5 to hit, range 40/120 ft. Hit: 12 (3d6+2) radiant damage. Powered by energy cell (50 shots)."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "attackBonus": 5,
+        "damage": {
+          "parts": [
+            [
+              "3d6+2",
+              "radiant"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Mind Blast (Recharge 5-6)",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "60-foot cone. DC 15 Intelligence save or take 22 (4d8+4) psychic damage and be stunned for 1 minute."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "save": {
+          "ability": "int",
+          "dc": 15
+        },
+        "damage": {
+          "parts": [
+            [
+              "4d8+4",
+              "psychic"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "flags": {
+    "rotf": {
+      "source": "Appendix C",
+      "chapter": "7"
+    }
+  }
+}
