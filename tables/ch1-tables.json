@@ -1,0 +1,76 @@
+[
+  {
+    "name": "Ten-Towns Starting Town",
+    "formula": "1d10",
+    "results": [
+      {"range": [1,1], "text": "Bremen — Quest: \"Lake Monster\", in which the characters hunt for a monster terrorizing Bremen's fishers."},
+      {"range": [2,2], "text": "Bryn Shander — Quest: \"Foaming Mugs\", in which the characters search for a missing supply of iron ingots."},
+      {"range": [3,3], "text": "Caer-Dineval — Quest: \"Black Swords\", in which the characters confront devil-worshiping cultists in a clifftop castle."},
+      {"range": [4,4], "text": "Caer-Konig — Quest: \"The Unseen\", in which the characters solve the mystery behind a number of petty thefts."},
+      {"range": [5,5], "text": "Dougan's Hole — Quest: \"Holed Up\", in which the characters cross paths with a pair of winter wolves and rescue two missing youngsters."},
+      {"range": [6,6], "text": "Easthaven — Quest: \"Toil and Trouble\", in which the characters search for missing fishers in a hag's lair."},
+      {"range": [7,7], "text": "Good Mead — Quest: \"The Mead Must Flow\", in which the characters retrieve several stolen casks of honey mead."},
+      {"range": [8,8], "text": "Lonelywood — Quest: \"The White Moose\", in which the characters hunt an evil white moose that is terrorizing local hunters and loggers."},
+      {"range": [9,9], "text": "Targos — Quest: \"Mountain Climb\", in which the characters search for an expedition that went missing on the slopes of Kelvin's Cairn."},
+      {"range": [10,10], "text": "Termalaine — Quest: \"A Beautiful Mine\", in which the characters go looking for trouble in a nearby gem mine."}
+    ],
+    "flags": {"rotf": {"chapter": 1}}
+  },
+  {
+    "name": "Ten-Towns Rumors",
+    "formula": "1d10",
+    "results": [
+      {"range": [1,1], "text": "In Bremen, fishers are being terrorized by a monster that lives in Maer Dualdon. Strange that none of the other towns on that lake have been harangued by the monster."},
+      {"range": [2,2], "text": "In Bryn Shander, some dwarves will pay good money to anyone who can find a lost shipment for them."},
+      {"range": [3,3], "text": "In Caer-Dineval, no one has seen the town speaker for a long time. Locals say Speaker Crannoc has fallen ill, but sinister figures have been seen entering and leaving the castle at odd hours."},
+      {"range": [4,4], "text": "In Caer-Konig, local establishments are beset by vandals and thieves that skulk about unseen. The town speaker, a dragonborn named Trovus, could really use some help catching the interlopers."},
+      {"range": [5,5], "text": "In Dougan's Hole, people live in fear of winter wolves that haunt the outskirts of the town. As big as horses they are, and smarter than normal wolves."},
+      {"range": [6,6], "text": "In Easthaven, they caught an evil wizard who killed some adventurers. The town militia plans to burn the wizard at the stake. I hear the captain of the guard is looking for adventurers to help with another task that may or may not be related."},
+      {"range": [7,7], "text": "In Good Mead, the town speaker was recently killed by a nine-foot-tall giant. Rumor has it the giant stole a shipment of honey mead, without which a handful of taverns in Ten-Towns might go dry!"},
+      {"range": [8,8], "text": "In Lonelywood, beware the dreaded white moose! It attacks loggers and trappers on sight, and the town's best hunters can't seem to catch or kill the beast. They could probably use some help."},
+      {"range": [9,9], "text": "In Targos, a band of adventurers is planning an expedition up the side of Kelvin's Cairn, hoping to find Oyaminartok, a goliath lycanthrope who can transform into a polar bear. If you hurry, you might be able to join the expedition!"},
+      {"range": [10,10], "text": "In Termalaine, Speaker Masthew has closed one of the town's lucrative gem mines. Apparently, a gang of kobolds crept into the mine and endangered some miners. Anyone who clears out the mine can expect to be well compensated."}
+    ],
+    "flags": {"rotf": {"chapter": 1}}
+  },
+  {
+    "name": "Bremen: Lake Events",
+    "formula": "1d20",
+    "results": [
+      {"range": [1,10], "text": "The lake is still and quiet for the next hour. A fine time for some fishing."},
+      {"range": [11,12], "text": "The characters spot a rowboat from Lonelywood or Termalaine. It has 1d4 fishers (commoners) aboard and keeps its distance. They fish for about an hour then head back."},
+      {"range": [13,13], "text": "The characters encounter a keelboat flying the Targos flag. It has 1d6 fishers and a captain (scout) aboard. They don't believe the lake monster is real and try to badger the characters into fishing elsewhere."},
+      {"range": [14,14], "text": "A cold wind blows across the lake for the next hour. Waters become choppy. Disadvantage on checks to steer and fish, and on saving throws against extreme cold."},
+      {"range": [15,15], "text": "A knucklehead trout leaps out of the lake, makes a tail attack against one random character in the boat, and dives back into the frigid water. Passive Perception 13+ is not surprised and may react."},
+      {"range": [16,20], "text": "The awakened plesiosaurus makes its presence known. Run the 'Clever Beast' encounter."}
+    ],
+    "flags": {"rotf": {"chapter": 1, "location": "Bremen", "quest": "Lake Monster"}}
+  },
+  {
+    "name": "Bremen: Plesiosaurus Behavior",
+    "formula": "1d6",
+    "results": [
+      {"range": [1,1], "text": "The plesiosaurus breaches the water with its fins and splashes water into nearby boats. It swims to the bottom of the lake if attacked."},
+      {"range": [2,2], "text": "The plesiosaurus rams a boat from beneath (randomly determined). The boat takes 3d6+4 bludgeoning damage. Characters standing in the boat must succeed on DC 12 Dex save or fall prone; fail by 5+ and they're knocked overboard into frigid water."},
+      {"range": [3,3], "text": "The plesiosaurus surfaces 10 feet away from a boat and takes a bite out of it (10-foot reach, randomly determined). The boat takes 3d6+4 piercing damage."},
+      {"range": [4,4], "text": "The plesiosaurus tries to capsize a boat (randomly determined). DC 12 Strength (Athletics) group check. Failure capsizes the boat; every creature in it falls into frigid water."},
+      {"range": [5,6], "text": "The plesiosaurus leaves without so much as a hello."}
+    ],
+    "flags": {"rotf": {"chapter": 1, "location": "Bremen", "quest": "Lake Monster"}}
+  },
+  {
+    "name": "Character Secrets: How I Died",
+    "formula": "1d20",
+    "results": [
+      {"range": [1,3], "text": "I was killed in an avalanche."},
+      {"range": [4,5], "text": "I was murdered by goblins in the mountains after they ambushed my caravan."},
+      {"range": [6,8], "text": "I got mauled to death by a yeti."},
+      {"range": [9,10], "text": "A white dragon attacked my caravan, and I was slain by its freezing breath weapon."},
+      {"range": [11,13], "text": "I was pulled into a freezing lake by a knucklehead trout and drowned before I could be rescued."},
+      {"range": [14,16], "text": "A lottery was recently held in Targos to see who would be sacrificed to the Frostmaiden. I was the unlucky one. I died of exposure after being stripped down and cast into a snowstorm."},
+      {"range": [17,18], "text": "I was killed in Ten-Towns by a lookalike — a doppelganger, I presume."},
+      {"range": [19,20], "text": "I was killed by a white moose outside Ten-Towns."}
+    ],
+    "flags": {"rotf": {"chapter": 0, "appendix": "B"}}
+  }
+]
