@@ -2,14 +2,11 @@
   "id": "dezmyr-shadowdusk",
   "title": "Dezmyr Shadowdusk",
   "description": "Dezmyr Shadowdusk — Warlock 3 (Hexblade) / Paladin 2, Shadar-kai, Charlatan. PC actor for Rime of the Frostmaiden.",
-  "version": "1.0.3",
-  "manifest": "https://raw.githubusercontent.com/Altairus-ai/foundry-modules/dezmyr-shadowdusk/module.json",
+  "version": "1.0.4",
+  "manifest": "https://api.github.com/repos/Altairus-ai/foundry-modules/contents/module.json?ref=dezmyr-shadowdusk",
   "download": "https://drive.google.com/uc?export=download&id=1Bg4pfpYpO_RIckNEturZX2l8CvTwBaqx",
   "authors": [{"name": "Sage"}],
-  "compatibility": {
-    "minimum": "12",
-    "verified": "14"
-  },
+  "compatibility": {"minimum": "12", "verified": "14"},
   "packs": [
     {
       "name": "dezmyr-actor",
