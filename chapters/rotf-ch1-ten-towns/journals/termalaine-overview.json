@@ -1,0 +1,28 @@
+{
+  "_id": "rotf-termalaine-overview",
+  "name": "Termalaine",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Overview",
+      "type": "text",
+      "title": { "show": true, "level": 1 },
+      "text": {
+        "format": 1,
+        "content": "<h2>Termalaine</h2><p><em>Friendliness ❄❄❄ &nbsp; Services ❄❄ &nbsp; Comfort ❄❄❄</em></p><p><strong>Available Quest:</strong> \"A Beautiful Mine\"<br><strong>Population:</strong> 600<br><strong>Sacrifice to Auril:</strong> Warmth<br><strong>Rivals:</strong> Bremen, Lonelywood, Targos</p><p>Founded by Calishite settlers who appreciated beauty, Termalaine is widely regarded as the most picturesque town in Icewind Dale, spreading out from the shore of Maer Dualdon and bordered on the north and west by tall pines. Its buildings incorporate carvings of wizards, homunculi, tigers, and smiling djinn.</p><p>For most visitors, the enchantment of the town is dispelled as soon as they feel the icy claws and teeth of the cold wind sweeping down from the north, shearing through their layers of clothing. Termalaine was built in the path of this dreadful gale, which continues well past the town to harry fishers on the southern half of the lake.</p><p>In addition to fishers, shipbuilders, and scrimshanders, Termalaine is home to miners who harvest gemstones from a cavern complex set into a low hill north and east of the settlement. Whenever Underdark creatures invade the mine, it is sealed off until adventurers can be hired to clear it out.</p><h3>Leadership</h3><p><strong>Speaker Oarus Masthew</strong> (lawful good half-orc veteran) was declared speaker after a close and contentious election. The child of half-orc adventurers, he was adopted by Shaelen Masthew, the previous speaker. Oarus is bright with a sharp sense of humor, but he has political enemies in town and lacks the full support of the town militia. Senior officers in the militia are in cahoots with Speaker Naerth Maxildanarr of Targos, who hopes to oust Masthew and replace him with one of their own.</p><h3>Militia</h3><p>Termalaine can muster up to 50 soldiers (tribal warrior stat block) and 4 veterans.</p><h3>Heraldry</h3><p>The open-mouthed head of a fish at the bottom of a sky-blue field, its jaws parted as it swallows a large rose-pink oval — a tourmaline, symbolic of the town's gem mining.</p><h3>Overland Travel</h3><table><thead><tr><th>Destination</th><th>Travel Time (on foot)</th></tr></thead><tbody><tr><td>Lonelywood</td><td>2 hours</td></tr><tr><td>Targos</td><td>4 hours</td></tr></tbody></table><p>Mounts and dogsleds can shorten travel times by as much as 50 percent.</p>"
+      }
+    },
+    {
+      "sort": 200000,
+      "name": "Locations",
+      "type": "text",
+      "title": { "show": true, "level": 1 },
+      "text": {
+        "format": 1,
+        "content": "<h2>Locations in Termalaine</h2><p><em>The following locations are marked on Map 1.18.</em></p><h3>The Blue Clam</h3><p><em>Dockside tavern</em></p><p>The fishers of Termalaine typically finish their days here, seated on benches near one of the building's long hearths to warm their feet while they fill their bellies with spiced chowder. Beautiful works of scrimshaw are hung on the walls.</p><p><strong>Vernon Braig</strong> (neutral good half-orc commoner) owns and runs the Blue Clam. He knows hunters and trappers in Lonelywood, and on good nights the hearths are full of roasting meat brought down from the north trail. Characters who loiter here can roll on the Ten-Towns Rumors table to hear a rumor or two.</p><p>Speaker Masthew can also be found here when not at Town Hall. He meets with adventurers outside the tavern: <em>\"You seem entirely too prepared for trouble. Are you here about the mine?\"</em></p><h3>The Eastside</h3><p><em>Inn</em></p><p>The Eastside is where most visitors in town stay. What looks from the outside like separate houses turns out to be a single structure with rooms connected by underground passages, with cozy guest accommodations in the cellar.</p><p><strong>Marta Peskryk</strong> (lawful good human commoner), a willowy teenager, runs the inn while tending to her bedridden father Clyde, a retired fisherman. As she performs her daily chores, Marta sings a melancholy song about a mysterious woman in a fur-lined red cloak who once stayed at the Eastside on her way to Lonelywood. A howling wind — perhaps Auril herself — burst in and attacked the woman, battering Marta's grandparents unconscious. The woman was never seen again.</p><p><strong>Treasure.</strong> Marta wears the ring the mysterious woman left as payment — a <em>ring of warmth</em> — around her neck on a chain. She will part with it only if convinced it can help end the wintry curse on Icewind Dale.</p><h3>The Gem Mine</h3><p>Located in the woods northeast of town, about a 30-minute walk from Termalaine. Currently closed and overrun with kobolds. See the journal entry <strong>A Beautiful Mine</strong> for the full quest.</p>"
+      }
+    }
+  ],
+  "folder": null,
+  "flags": {}
+}
