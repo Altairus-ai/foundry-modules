@@ -1,0 +1,20 @@
+{
+  "name": "Bremen",
+  "pages": [
+    {
+      "name": "Overview",
+      "type": "text",
+      "text": {
+        "content": "<h2>Bremen</h2><p><em>Friendliness ❄❄❄ &nbsp;|&nbsp; Services ❄ &nbsp;|&nbsp; Comfort ❄❄</em></p><p>Founded by dwarf prospectors, the sleepy town of Bremen sits on the west bank of Maer Dualdon, at the mouth of the Shaengarne River. Bremen's harbor has frozen, requiring local fishers to haul their boats across the ice to put them in the lake. Visitors who lack a boat can reach Bremen only by crossing the river, which is mostly frozen over. Targos, Termalaine, and Lonelywood are all visible from the docks on clear days.</p><p>If Auril's everlasting winter has one benefit, it's that the hardy folk of Bremen are spared the seasonal floods that normally threaten the town in early summer. Twice in the past two months, residents have had to mount search parties for their town speaker and oldest living resident, Dorbulgruf Shalescar, finding him wandering the frozen shores of the Shaengarne with no memory of how he got there.</p><h3>At a Glance</h3><ul><li><strong>Population:</strong> 150</li><li><strong>Leader:</strong> Speaker Dorbulgruf Shalescar (lawful good shield dwarf commoner) — age has addled his mind; his vacant-eyed stare is often mistaken for unflappable calmness</li><li><strong>Militia:</strong> Up to 25 soldiers (tribal warrior) and 2 veterans</li><li><strong>Heraldry:</strong> A gold circle on a white field, with a horizontal blue band (the Shaengarne River) extending left and a flaring blue triangle (Maer Dualdon) opening right</li><li><strong>Sacrifice to Auril:</strong> Warmth — no fires lit between dusk and dawn on the new moon</li><li><strong>Rivals:</strong> Lonelywood, Targos, Termalaine</li><li><strong>Available Quest:</strong> Lake Monster</li></ul><h3>Overland Travel</h3><p>Heavy snow has obliterated the trail to Targos. On foot: 2 hours. Mounts or dogsleds reduce travel time by up to 50%.</p>"
+      }
+    },
+    {
+      "name": "Locations",
+      "type": "text",
+      "text": {
+        "content": "<h2>Locations in Bremen</h2><h3>Buried Treasures (Inn)</h3><p>This inn caters to treasure-seekers who pan for gold along the riverbank in warmer weather. During winter it has few visitors. The middle-aged innkeeper, <strong>Cora Mulphoon</strong> (neutral good human commoner), treats guests like royalty while barely making ends meet.</p><p><em>Cora's Loss:</em> Cora's adult son Huarwar used to help with chores until two months ago. He joined a search party for Speaker Shalescar, got separated in a blizzard, and returned the next morning with frostbite and a changed demeanor. Cora found a shard of black ice in his room; he snatched it away and threatened her. Two tieflings (wearing chardalyn amulets) arrived and offered Huarwar sanctuary — he left willingly, saying he'd never return. She believes he may be at one of the two castles in Ten-Towns: Caer-Dineval or Caer-Konig. <em>(Characters may find Huarwar at the keep in Caer-Dineval, \"Black Swords.\")</em></p><h3>Five-Tavern Center</h3><p>Five unaffiliated taverns stand in a semicircle around a central yard — the legacy of five brothers who couldn't agree on who would run a single establishment. The taverns are <strong>Stones</strong>, <strong>Even Keel</strong>, <strong>the River's Mouth</strong>, <strong>the Grumpy Moose</strong>, and <strong>the Black-Bearded Brother</strong>. All are old and poorly maintained. Roll on the <em>Ten-Towns Rumors</em> table for gossip heard here.</p><h3>Town Hall</h3><p>A modest hall where Speaker Shalescar conducts what little official business his declining mind allows.</p>"
+      }
+    }
+  ],
+  "flags": {"rotf": {"chapter": 1, "location": "Bremen"}}
+}
