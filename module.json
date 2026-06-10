@@ -1,72 +1,35 @@
 {
-    "id": "rime-of-the-frostmaiden",
-    "title": "Rime of the Frostmaiden",
-    "description": "Icewind Dale: Rime of the Frostmaiden \u2014 Foundry VTT module. Actor compendium for all Appendix C creatures. Chapter sub-modules contain journals and scenes.",
-    "version": "1.0.0",
-    "authors": [
-        {
-            "name": "Szoradrin",
-            "url": "https://github.com/Altairus-ai"
-        }
-    ],
-    "packs": [
-        {
-            "name": "rotf-actors",
-            "label": "RotF: Creatures",
-            "path": "packs/rotf-actors",
-            "type": "Actor",
-            "system": "dnd5e",
-            "ownership": {
-                "PLAYER": "OBSERVER",
-                "ASSISTANT": "OWNER"
-            }
-        },
-        {
-            "name": "rotf-scenes",
-            "label": "RotF: Scenes",
-            "path": "packs/rotf-scenes",
-            "type": "Scene",
-            "ownership": {
-                "PLAYER": "OBSERVER",
-                "ASSISTANT": "OWNER"
-            }
-        }
-    ],
-    "packFolders": [
-        {
-            "name": "Rime of the Frostmaiden",
-            "sorting": "a",
-            "color": "#5bb8f5",
-            "packs": [
-                "rotf-actors",
-                "rotf-scenes"
-            ]
-        }
-    ],
-    "compatibility": {
-        "minimum": "14",
-        "verified": "14.363",
-        "maximum": "14.999.999"
+  "id": "rime-of-the-frostmaiden",
+  "title": "Rime of the Frostmaiden",
+  "description": "Icewind Dale: Rime of the Frostmaiden — Foundry VTT module. Journals, actors, and scenes.",
+  "version": "1.0.0",
+  "manifest": "https://raw.githubusercontent.com/Altairus-ai/foundry-modules/scenes/rime-of-the-frostmaiden/module.json",
+  "download": "https://github.com/Altairus-ai/foundry-modules/archive/refs/heads/scenes/rime-of-the-frostmaiden.zip",
+  "authors": [{"name": "Szoradrin","url": "https://github.com/Altairus-ai"}],
+  "packs": [
+    {
+      "name": "rotf-actors",
+      "label": "RotF: Creatures",
+      "path": "packs/rotf-actors",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {"PLAYER": "OBSERVER","ASSISTANT": "OWNER"}
     },
-    "relationships": {
-        "requires": [
-            {
-                "id": "dnd5e",
-                "type": "system",
-                "compatibility": {
-                    "minimum": "5.0.0"
-                }
-            }
-        ],
-        "recommends": [
-            {
-                "id": "fvtt-trazzm-homebrew-5e",
-                "type": "module"
-            }
-        ]
-    },
-    "url": "https://github.com/Altairus-ai/foundry-modules",
-    "manifest": "https://raw.githubusercontent.com/Altairus-ai/foundry-modules/release/rime-of-the-frostmaiden/module.json",
-    "download": "https://codeload.github.com/Altairus-ai/foundry-modules/zip/refs/heads/release/rime-of-the-frostmaiden",
-    "license": "https://raw.githubusercontent.com/Altairus-ai/foundry-modules/release/rime-of-the-frostmaiden/LICENSE"
+    {
+      "name": "rotf-scenes",
+      "label": "RotF: Scenes",
+      "path": "packs/rotf-scenes",
+      "type": "Scene",
+      "ownership": {"PLAYER": "OBSERVER","ASSISTANT": "OWNER"}
+    }
+  ],
+  "packFolders": [
+    {"name": "Rime of the Frostmaiden","sorting": "a","color": "#5bb8f5","packs": ["rotf-actors","rotf-scenes"]}
+  ],
+  "compatibility": {"minimum": "14","verified": "14.363","maximum": "14.999.999"},
+  "relationships": {
+    "requires": [{"id": "dnd5e","type": "system","compatibility": {"minimum": "5.0.0"}}],
+    "recommends": [{"id": "fvtt-trazzm-homebrew-5e","type": "module"}]
+  },
+  "url": "https://github.com/Altairus-ai/foundry-modules"
 }
