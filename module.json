@@ -1,8 +1,10 @@
 {
   "id": "dezmyr-shadowdusk",
   "title": "Dezmyr Shadowdusk — PC",
-  "description": "Dezmyr Shadowdusk character import for Rime of the Frostmaiden. Warlock 3 (Hexblade) / Paladin 2, Shadar-kai, Charlatan. Import the actor from the compendium then drag to your world.",
+  "description": "Dezmyr Shadowdusk character import for Rime of the Frostmaiden. Warlock 3 (Hexblade) / Paladin 2, Shadar-kai, Charlatan.",
   "version": "1.0.0",
+  "manifest": "https://raw.githubusercontent.com/Altairus-ai/foundry-modules/dezmyr-shadowdusk/module.json",
+  "download": "https://github.com/Altairus-ai/foundry-modules/archive/refs/heads/dezmyr-shadowdusk.zip",
   "compatibility": {
     "minimum": "12",
     "verified": "14"
