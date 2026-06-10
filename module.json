@@ -1,0 +1,20 @@
+{
+  "id": "dezmyr-shadowdusk",
+  "title": "Dezmyr Shadowdusk — PC",
+  "description": "Dezmyr Shadowdusk character import for Rime of the Frostmaiden. Warlock 3 (Hexblade) / Paladin 2, Shadar-kai, Charlatan. Import the actor from the compendium then drag to your world.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "14"
+  },
+  "authors": [{"name": "Sage / Altairus AI"}],
+  "packs": [
+    {
+      "name": "dezmyr-actor",
+      "label": "Dezmyr Shadowdusk",
+      "path": "packs/dezmyr-actor",
+      "type": "Actor",
+      "system": "dnd5e"
+    }
+  ]
+}
